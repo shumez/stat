@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/StatisticalModelsTheoryAndPractice/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-18 15:13:3
-Modified: 	2019-05-18 16:54:53
+Modified: 	2019-05-18 16:55:56
 -----
 Copyright (c) 2019 shumez
 -->
@@ -43,7 +43,11 @@ problem w/ cross-tabulation
 &rArr; use stat model
 
 
+## 01.02. The HIP trial
 
+Health Insurance Plan
+
+intention-to-treat analysis
 
 
 
