@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/StatisticalModelsTheoryAndPractice/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-18 15:13:3
-Modified: 	2019-05-18 17:49:44
+Modified: 	2019-05-18 18:03:8
 -----
 Copyright (c) 2019 shumez
 -->
@@ -15,6 +15,7 @@ Copyright (c) 2019 shumez
 * [01.01. Introduction][0101]
 * [01.02. The HIP trial][0102]
 * [01.03. Snow on cholera][0103]
+* [01.04. Yule on the causes of poverty][0104]
 
 
 ## 01.01. Introduction
@@ -53,14 +54,26 @@ intention-to-treat analysis
 
 ## 01.03. Snow on cholera
 
+[![][outbreak map]][John Snow]
+[![][outbreak map legend]][John Snow]
+
 **natural experiment**: observational study as if randomized by nature
 
 [John Snow] 
 
 [Broad street pump] in Soho
 
-[![][outbreak map]][John Snow]
-[![][outbreak map legend]][John Snow]
+
+## 01.04. Yule on the causes of poverty
+
+regression technique
+
+Legendre (1805), Gauss (1809)
+
+
+Yule (1899) 
+
+\[ \Delta \text{Paup} = a + b \times \Delta\text{Out} + c \times  \Delta\text{Old} + d \times \Delta\text{Pop} + \text{error} \]
 
 
 
@@ -69,6 +82,7 @@ intention-to-treat analysis
 [0101]: #0101_introduction
 [0102]: #0102_the_hip_trial
 [0103]: #0103_snow_on_cholera
+[0104]: #0104_yule_on_the_causes_of_poverty
 
 <!-- ref -->
 
