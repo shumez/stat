@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/StatisticalModelsTheoryAndPractice/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-18 15:13:3
-Modified: 	2019-05-18 16:55:56
+Modified: 	2019-05-18 16:57:20
 -----
 Copyright (c) 2019 shumez
 -->
@@ -14,6 +14,7 @@ Copyright (c) 2019 shumez
 
 * [01.01. Introduction][0101]
 * [01.02. The HIP trial][0102]
+* [01.03. Snow on cholera][0103]
 
 
 ## 01.01. Introduction
@@ -50,12 +51,16 @@ Health Insurance Plan
 intention-to-treat analysis
 
 
+## 01.03. Snow on cholera
+
+**natural experiment**
 
 
 ##
 
 [0101]: #0101_introduction
 [0102]: #0102_the_hip_trial
+[0103]: #0103_snow_on_cholera
 
 <!-- ref -->
 
