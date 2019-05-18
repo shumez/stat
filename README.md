@@ -1,16 +1,16 @@
 <!--
 Filename: 	README.md
-Project: 	/Users/shume/Developer/doc/proj
-Author: 	shumez
-Created: 	2018-05-23 13:54:0
-Modified: 	2018-12-28 10:53:4
+Project: 	/Users/shume/Developer/stat
+Author: 	shumez <https://github.com/shumez>
+Created: 	2019-05-16 15:16:3
+Modified: 	2019-05-18 15:06:5
 -----
-Copyright (c) 2018 shumez
+Copyright (c) 2019 shumez
 -->
 
-#
+# stat
 
-[![cover](img/)][img]
+<!-- [![cover](img/)][img] -->
 
 
 [docs] / [DOCS.md]
