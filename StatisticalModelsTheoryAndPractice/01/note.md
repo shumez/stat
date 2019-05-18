@@ -1,9 +1,9 @@
 <!--
-Filename: 	index.md
+Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/StatisticalModelsTheoryAndPractice/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-18 15:13:3
-Modified: 	2019-05-18 16:17:44
+Modified: 	2019-05-18 16:54:53
 -----
 Copyright (c) 2019 shumez
 -->
@@ -13,6 +13,7 @@ Copyright (c) 2019 shumez
 ## ToC
 
 * [01.01. Introduction][0101]
+* [01.02. The HIP trial][0102]
 
 
 ## 01.01. Introduction
@@ -50,6 +51,7 @@ problem w/ cross-tabulation
 ##
 
 [0101]: #0101_introduction
+[0102]: #0102_the_hip_trial
 
 <!-- ref -->
 
