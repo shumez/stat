@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/StatisticalModelsTheoryAndPractice/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-18 15:13:3
-Modified: 	2019-05-18 16:57:20
+Modified: 	2019-05-18 17:49:44
 -----
 Copyright (c) 2019 shumez
 -->
@@ -53,7 +53,15 @@ intention-to-treat analysis
 
 ## 01.03. Snow on cholera
 
-**natural experiment**
+**natural experiment**: observational study as if randomized by nature
+
+[John Snow] 
+
+[Broad street pump] in Soho
+
+[![][outbreak map]][John Snow]
+[![][outbreak map legend]][John Snow]
+
 
 
 ##
@@ -64,7 +72,13 @@ intention-to-treat analysis
 
 <!-- ref -->
 
+[John Snow]: https://en.wikipedia.org/wiki/John_Snow
+[Broad street pump]: https://en.wikipedia.org/wiki/Soho#Cholera_outbreak
+
 <!-- fig -->
+
+[outbreak map]: https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Chol_an.gif/300px-Chol_an.gif
+[outbreak map legend]: https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Choleramaplondon1866.png/300px-Choleramaplondon1866.png
 
 <style type="text/css">
 	img{width: 51%; float: right;}
