@@ -1,0 +1,60 @@
+<!--
+Filename: 	index.md
+Project: 	/Users/shume/Developer/stat/StatisticalModelsTheoryAndPractice/01
+Author: 	shumez <https://github.com/shumez>
+Created: 	2019-05-18 15:13:3
+Modified: 	2019-05-18 16:17:44
+-----
+Copyright (c) 2019 shumez
+-->
+
+# 01. Observational Studies and Experiments
+
+## ToC
+
+* [01.01. Introduction][0101]
+
+
+## 01.01. Introduction
+
+regressin models used for
+
+1. to summarize data
+2. to predict future
+3. to predict the secults of interventions (caisal inferece)
+
+the key problem:  
+**confounding**
+
+handled by 
+
+* subdividing the population (**stratification** aka **cross-tabulation**)
+* modeling
+
+* control: subject NOT get treatment
+* controlled experiment: study where the investigators decide who will be in the treatment group
+
+**association**
+
+as we control for more var, study groups get smaller, more room for chance effects  
+problem w/ cross-tabulation
+
+&rArr; use stat model
+
+
+
+
+
+
+
+##
+
+[0101]: #0101_introduction
+
+<!-- ref -->
+
+<!-- fig -->
+
+<style type="text/css">
+	img{width: 51%; float: right;}
+</style>
