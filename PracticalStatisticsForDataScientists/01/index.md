@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-19 14:27:58
+Modified: 	2019-05-19 14:35:15
 -----
 Copyright (c) 2019 shumez
 -->
@@ -20,6 +20,7 @@ Copyright (c) 2019 shumez
     * [01.02.03. Further Reading][010203]
 * [01.03. Estimates of Location][0103]
     * [01.03.01. Mean][010301]
+    * [01.03.02. Median and Robust Estimates][010302]
 * [01.04. Estimates of Variability][0104]
 * [01.05. Exploring the Data Distribution][0105]
 * [01.06. Exploring Binary and Categorical Data][0106]
@@ -70,6 +71,14 @@ multiplying data val \(x_i\) by weight \(w_i\) & dividing sum of weights
 
 \[ \text{Weighted Mean} = \bar{x}_w = \frac{\sum_{i=1}^N{w_i x_i}}{\sum_i^N{w_i}} \]
 
+
+### 01.03.02. Median and Robust Estimates
+
+**weighted median**
+
+
+
+
 ##
 
 [0101]: #0101_elements_of_structured_data
@@ -80,6 +89,7 @@ multiplying data val \(x_i\) by weight \(w_i\) & dividing sum of weights
 [010203]: #010203_further_reading
 [0103]: #0103_estimated_of_location
 [010301]: #010301_mean
+[010302]: #010302_median_and_robust_estimates
 [0104]: #0104_estimates_of_variability
 [0105]: #0105_exploring_the_data_distribution
 [0106]: #0106_exploring_binary_and_categorical_data
