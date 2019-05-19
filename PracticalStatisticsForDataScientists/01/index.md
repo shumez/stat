@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-19 14:08:59
+Modified: 	2019-05-19 14:09:59
 -----
 Copyright (c) 2019 shumez
 -->
@@ -15,6 +15,7 @@ Copyright (c) 2019 shumez
 * [01.01. Elements of Structured Data][0101]
     * [01.01.01. Further Reading][010101]
 * [01.02. Rectangular Data][0102]
+    * [01.02.01. Data Frames and Indexed][010201]
 * [01.03. Estimates of Location][0103]
 * [01.04. Estimates of Variability][0104]
 * [01.05. Exploring the Data Distribution][0105]
@@ -38,9 +39,10 @@ Copyright (c) 2019 shumez
 * [R Introduction / Basic data types]
 * [SQL Data Types]
 
+
 ## 01.02. Rectangular Data
 
-
+### 01.02.01. Data Frames and Indexed
 
 
 
@@ -49,6 +51,7 @@ Copyright (c) 2019 shumez
 [0101]: #0101_elements_of_structured_data
 [010101]: #010101_further_reading
 [0102]: #0102_rectangular_data
+[010201]: #010201_data_frames_and_indexed
 [0103]: #0103_estimated_of_location
 [0104]: #0104_estimates_of_variability
 [0105]: #0105_exploring_the_data_distribution
