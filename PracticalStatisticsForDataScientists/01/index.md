@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-19 16:14:44
+Modified: 	2019-05-19 16:37:30
 -----
 Copyright (c) 2019 shumez
 -->
@@ -119,6 +119,30 @@ weightedMedian(state$Murder.Rate, w = state$Population)
 
 
 ### 01.04.01. Standard Deviation and Related Estimates
+
+**deviations**
+
+\[ \text{Mean Absolution Deviation} = \frac{\sum_{i=1}^N{|x_i - \bar{x}|}}{N} \]
+
+sample mean \(\bar{x}\)
+
+**variance**, **standard deviation**
+
+\[
+    \begin{align*}
+        \text{Variance} &= s^2 = \frac{\sum{(x - \bar{x})^2}}{N-1} \\
+        \text{Standard Deviation} &= s = \sqrt{\text{Variance}} 
+    \end{align*}
+\]
+
+
+variance, sd, mean absolute deviation NOT robust
+
+robust estimate of variablity is **median absolute deviation from the median** (MAD)
+
+\[ \text{Median Absolution Deviation} = \text{Median}(|x_1 - m|, |x_2 - m|, \cdots, |x_N - m|) \]
+
+median \(m\)
 
 
 ##
