@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/StatisticalModelsTheoryAndPractice/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-18 15:13:3
-Modified: 	2019-05-19 11:05:20
+Modified: 	2019-05-19 12:26:42
 -----
 Copyright (c) 2019 shumez
 -->
@@ -86,7 +86,7 @@ Yule (1899)
 \(\text{Old}\) percentage of the population aged over 65
 \(\text{Pop}\) population
 
-\[ \sum{( \Delta\text{Paup} - a - b \times \Deltatext{Out} - c \times \Delta\text{Old} - d \times \Delta\text{Pop} )^2} \]
+\[ \sum{( \Delta\text{Paup} - a - b \times \Delta\text{Out} - c \times \Delta\text{Old} - d \times \Delta\text{Pop} )^2} \]
 
 \[ \Delta \text{Paup} = 13.19 + 0.755 \Delta\text{Out} - 0.022 \Delta\text{Old} - 0.322 \Delta\text{Pop} + \text{error} \tag{2} \]
 
@@ -102,7 +102,7 @@ Yule (1899)
 	\end{align*}
 \]
 
-\(\Deltatext{Paup}\) 
+\(\Delta\text{Paup}\) 
 
 \[ 13.19 + 0.755 \times (-95) - 0.022 \times 4 - 0.322 \times 36 = -70 \]
 
