@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-19 16:37:30
+Modified: 	2019-05-19 17:36:18
 -----
 Copyright (c) 2019 shumez
 -->
@@ -26,6 +26,7 @@ Copyright (c) 2019 shumez
     * [01.03.04. Further Reading][010304]
 * [01.04. Estimates of Variability][0104]
     * [01.04.01. Standard Deviation and Related Estimates][010401]
+    * [01.04.02. Estimates Based on Percentiles][010402]
 * [01.05. Exploring the Data Distribution][0105]
 * [01.06. Exploring Binary and Categorical Data][0106]
 * [01.07. Correlation][0107]
@@ -145,6 +146,17 @@ robust estimate of variablity is **median absolute deviation from the median** (
 median \(m\)
 
 
+### 01.04.02. Estimates Based on Percentiles
+
+**order statistics**
+
+**range**: diff between max & min
+
+**percentile**
+
+**interquantile range**: diff between 25th percentile & 75th percentile
+
+
 ##
 
 [0101]: #0101_elements_of_structured_data
@@ -161,6 +173,7 @@ median \(m\)
 [010304]: #010304_further_reading
 [0104]: #0104_estimates_of_variability
 [010401]: #010401_standard_deviation_and_related_estimates
+[010402]: #010402_estimates_based_on_percentiles
 [0105]: #0105_exploring_the_data_distribution
 [0106]: #0106_exploring_binary_and_categorical_data
 [0107]: #0107_correlation
