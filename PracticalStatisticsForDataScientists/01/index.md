@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-19 13:44:24
+Modified: 	2019-05-19 14:01:16
 -----
 Copyright (c) 2019 shumez
 -->
@@ -31,6 +31,10 @@ Copyright (c) 2019 shumez
 * categorical
     * binary
     * ordinal: ordered
+
+
+## 01.02. Rectangular Data
+
 
 
 ##
