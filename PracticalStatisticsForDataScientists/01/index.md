@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-19 14:35:15
+Modified: 	2019-05-19 14:37:27
 -----
 Copyright (c) 2019 shumez
 -->
@@ -21,6 +21,7 @@ Copyright (c) 2019 shumez
 * [01.03. Estimates of Location][0103]
     * [01.03.01. Mean][010301]
     * [01.03.02. Median and Robust Estimates][010302]
+        * [01.03.02.01. Outliers][01030201]
 * [01.04. Estimates of Variability][0104]
 * [01.05. Exploring the Data Distribution][0105]
 * [01.06. Exploring Binary and Categorical Data][0106]
@@ -76,7 +77,9 @@ multiplying data val \(x_i\) by weight \(w_i\) & dividing sum of weights
 
 **weighted median**
 
+#### 01.03.02.01. Outliers
 
+median: **robust** estimate of location since NOT influenced by **outliers**
 
 
 ##
@@ -90,6 +93,7 @@ multiplying data val \(x_i\) by weight \(w_i\) & dividing sum of weights
 [0103]: #0103_estimated_of_location
 [010301]: #010301_mean
 [010302]: #010302_median_and_robust_estimates
+[01030201]: #01030201_outliers
 [0104]: #0104_estimates_of_variability
 [0105]: #0105_exploring_the_data_distribution
 [0106]: #0106_exploring_binary_and_categorical_data
