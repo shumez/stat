@@ -101,6 +101,21 @@
         
             <li><a class="toctree-l4" href="#010303_example_location_estimates_of_population_and_murder_rates">01.03.03. Example: Location Estimates of Population and Murder Rates</a></li>
         
+            <li><a class="toctree-l4" href="#010304_further_reading">01.03.04. Further Reading</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#0104_estimates_of_variability">01.04. Estimates of Variability</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#010401_standard_deviation_and_related_estimates">01.04.01. Standard Deviation and Related Estimates</a></li>
+        
+            <li><a class="toctree-l4" href="#010402_estimates_based_on_percentiles">01.04.02. Estimates Based on Percentiles</a></li>
+        
+            <li><a class="toctree-l4" href="#010403_example_variability_estimated_of_state_population">01.04.03. Example: Variability Estimated of State Population</a></li>
+        
         </ul>
     
 
@@ -212,7 +227,7 @@ Filename:   index.md
 Project:    /Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author:     shumez <https://github.com/shumez>
 Created:    2019-05-19 13:17:3
-Modified:   2019-05-19 14:43:23
+Modified:   2019-05-19 17:40:5
 -----
 Copyright (c) 2019 shumez
 -->
@@ -237,9 +252,15 @@ Copyright (c) 2019 shumez
 </ul>
 </li>
 <li><a href="#010303_example_location_estimates_of_population_and_murder_rates">01.03.03. Example: Location Estimates of Population and Murder Rates</a></li>
+<li><a href="#010304_further_reading">01.03.04. Further Reading</a></li>
 </ul>
 </li>
-<li><a href="#0104_estimates_of_variability">01.04. Estimates of Variability</a></li>
+<li><a href="#0104_estimates_of_variability">01.04. Estimates of Variability</a><ul>
+<li><a href="#010401_standard_deviation_and_related_estimates">01.04.01. Standard Deviation and Related Estimates</a></li>
+<li><a href="#010402_estimates_based_on_percentiles">01.04.02. Estimates Based on Percentiles</a></li>
+<li><a href="#010403_example_variability_estimated_of_state_population">01.04.03. Example: Variability Estimated of State Population</a></li>
+</ul>
+</li>
 <li><a href="#0105_exploring_the_data_distribution">01.05. Exploring the Data Distribution</a></li>
 <li><a href="#0106_exploring_binary_and_categorical_data">01.06. Exploring Binary and Categorical Data</a></li>
 <li><a href="#0107_correlation">01.07. Correlation</a></li>
@@ -289,6 +310,66 @@ Copyright (c) 2019 shumez
 <h4 id="01030201_outliers">01.03.02.01. Outliers<a class="headerlink" href="#01030201_outliers" title="Permanent link">&para;</a></h4>
 <p>median: <strong>robust</strong> estimate of location since NOT influenced by <strong>outliers</strong></p>
 <h3 id="010303_example_location_estimates_of_population_and_murder_rates">01.03.03. Example: Location Estimates of Population and Murder Rates<a class="headerlink" href="#010303_example_location_estimates_of_population_and_murder_rates" title="Permanent link">&para;</a></h3>
+<pre><code class="r">state &lt;- read.csv(file = 'data/state.csv')
+
+mean(state[[&quot;Population&quot;]])
+mean(state$Population)
+mean(state$Population, trim = .1)
+median(state$Population)
+weighted.mean(state$Murder.Rate, w = state$Population)
+
+library('matrixStats')
+weightedMedian(state$Murder.Rate, w = state$Population)
+</code></pre>
+
+<h3 id="010304_further_reading">01.03.04. Further Reading<a class="headerlink" href="#010304_further_reading" title="Permanent link">&para;</a></h3>
+<h2 id="0104_estimates_of_variability">01.04. Estimates of Variability<a class="headerlink" href="#0104_estimates_of_variability" title="Permanent link">&para;</a></h2>
+<p><strong>variability</strong>, aka, <strong>dispersion</strong></p>
+<ul>
+<li><strong>Deviatons</strong> (errors, residuals)</li>
+<li><strong>Variance</strong> (mean-squared-error)</li>
+<li><strong>Standard Deviation</strong> (l2-norm, Euclidean norm)</li>
+<li><strong>Mean Absolute Deviation</strong> (l1-norm, Manhattan norm)</li>
+<li><strong>Median Absolute Deviation from the Median</strong></li>
+<li><strong>Range</strong></li>
+<li><strong>Order Statistics</strong> (ranks)</li>
+<li><strong>Percentile</strong></li>
+<li><strong>Interquantile Range</strong> (IQR)</li>
+</ul>
+<h3 id="010401_standard_deviation_and_related_estimates">01.04.01. Standard Deviation and Related Estimates<a class="headerlink" href="#010401_standard_deviation_and_related_estimates" title="Permanent link">&para;</a></h3>
+<p><strong>deviations</strong></p>
+<p>
+<script type="math/tex; mode=display"> \text{Mean Absolution Deviation} = \frac{\sum_{i=1}^N{|x_i - \bar{x}|}}{N} </script>
+</p>
+<p>sample mean <script type="math/tex">\bar{x}</script>
+</p>
+<p><strong>variance</strong>, <strong>standard deviation</strong></p>
+<p>
+<script type="math/tex; mode=display">
+    \begin{align*}
+        \text{Variance} &= s^2 = \frac{\sum{(x - \bar{x})^2}}{N-1} \\
+        \text{Standard Deviation} &= s = \sqrt{\text{Variance}} 
+    \end{align*}
+</script>
+</p>
+<p>variance, sd, mean absolute deviation NOT robust</p>
+<p>robust estimate of variablity is <strong>median absolute deviation from the median</strong> (MAD)</p>
+<p>
+<script type="math/tex; mode=display"> \text{Median Absolution Deviation} = \text{Median}(|x_1 - m|, |x_2 - m|, \cdots, |x_N - m|) </script>
+</p>
+<p>median <script type="math/tex">m</script>
+</p>
+<h3 id="010402_estimates_based_on_percentiles">01.04.02. Estimates Based on Percentiles<a class="headerlink" href="#010402_estimates_based_on_percentiles" title="Permanent link">&para;</a></h3>
+<p><strong>order statistics</strong></p>
+<p><strong>range</strong>: diff between max &amp; min</p>
+<p><strong>percentile</strong></p>
+<p><strong>interquantile range</strong>: diff between 25th percentile &amp; 75th percentile</p>
+<h3 id="010403_example_variability_estimated_of_state_population">01.04.03. Example: Variability Estimated of State Population<a class="headerlink" href="#010403_example_variability_estimated_of_state_population" title="Permanent link">&para;</a></h3>
+<pre><code class="r">sd(state$Population)
+IQR(state$Population)
+mad(state$Population)
+</code></pre>
+
 <h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <!-- ref -->
 
