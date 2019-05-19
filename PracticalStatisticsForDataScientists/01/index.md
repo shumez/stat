@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-19 14:15:37
+Modified: 	2019-05-19 14:16:57
 -----
 Copyright (c) 2019 shumez
 -->
@@ -49,6 +49,11 @@ Copyright (c) 2019 shumez
 ### 01.02.02. Graph Data
 
 ### 01.02.03. Further Reading
+
+
+## 01.03. Estimates of Location
+
+
 
 ##
 
