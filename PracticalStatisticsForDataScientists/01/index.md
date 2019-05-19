@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-19 16:01:17
+Modified: 	2019-05-19 16:04:30
 -----
 Copyright (c) 2019 shumez
 -->
@@ -23,6 +23,7 @@ Copyright (c) 2019 shumez
     * [01.03.02. Median and Robust Estimates][010302]
         * [01.03.02.01. Outliers][01030201]
     * [01.03.03. Example: Location Estimates of Population and Murder Rates][010303]
+    * [01.03.04. Further Reading][010304]
 * [01.04. Estimates of Variability][0104]
 * [01.05. Exploring the Data Distribution][0105]
 * [01.06. Exploring Binary and Categorical Data][0106]
@@ -98,6 +99,9 @@ weightedMedian(state$Murder.Rate, w = state$Population)
 ```
 
 
+### 01.03.04. Further Reading
+
+
 ##
 
 [0101]: #0101_elements_of_structured_data
@@ -111,6 +115,7 @@ weightedMedian(state$Murder.Rate, w = state$Population)
 [010302]: #010302_median_and_robust_estimates
 [01030201]: #01030201_outliers
 [010303]: #010303_example_location_estimates_of_population_and_murder_rates
+[010304]: #010304_further_reading
 [0104]: #0104_estimates_of_variability
 [0105]: #0105_exploring_the_data_distribution
 [0106]: #0106_exploring_binary_and_categorical_data
