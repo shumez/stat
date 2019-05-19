@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-19 14:16:57
+Modified: 	2019-05-19 14:27:58
 -----
 Copyright (c) 2019 shumez
 -->
@@ -19,6 +19,7 @@ Copyright (c) 2019 shumez
     * [01.02.02. Graph Data][010202]
     * [01.02.03. Further Reading][010203]
 * [01.03. Estimates of Location][0103]
+    * [01.03.01. Mean][010301]
 * [01.04. Estimates of Variability][0104]
 * [01.05. Exploring the Data Distribution][0105]
 * [01.06. Exploring Binary and Categorical Data][0106]
@@ -53,7 +54,21 @@ Copyright (c) 2019 shumez
 
 ## 01.03. Estimates of Location
 
+### 01.03.01. Mean
 
+\[ \text{Mean} = \bar{x} = \frac{\sum_i^N{x_i}}{N} \]
+
+**trimmed mean**
+
+\(p\) smallest and largest val omitted
+
+\[ \text{Trimmed Mean} = \bar{x} = \frac{\sum_{i=p+1}^{N-p}{x_{(i)}}}{N-2p} \]
+
+**weighted mean** 
+
+multiplying data val \(x_i\) by weight \(w_i\) & dividing sum of weights
+
+\[ \text{Weighted Mean} = \bar{x}_w = \frac{\sum_{i=1}^N{w_i x_i}}{\sum_i^N{w_i}} \]
 
 ##
 
@@ -64,6 +79,7 @@ Copyright (c) 2019 shumez
 [010202]: #010202_graph_data
 [010203]: #010203_further_reading
 [0103]: #0103_estimated_of_location
+[010301]: #010301_mean
 [0104]: #0104_estimates_of_variability
 [0105]: #0105_exploring_the_data_distribution
 [0106]: #0106_exploring_binary_and_categorical_data
