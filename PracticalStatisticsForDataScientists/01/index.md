@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-19 17:36:18
+Modified: 	2019-05-19 17:40:5
 -----
 Copyright (c) 2019 shumez
 -->
@@ -27,6 +27,7 @@ Copyright (c) 2019 shumez
 * [01.04. Estimates of Variability][0104]
     * [01.04.01. Standard Deviation and Related Estimates][010401]
     * [01.04.02. Estimates Based on Percentiles][010402]
+    * [01.04.03. Example: Variability Estimated of State Population][010403]
 * [01.05. Exploring the Data Distribution][0105]
 * [01.06. Exploring Binary and Categorical Data][0106]
 * [01.07. Correlation][0107]
@@ -157,6 +158,15 @@ median \(m\)
 **interquantile range**: diff between 25th percentile & 75th percentile
 
 
+### 01.04.03. Example: Variability Estimated of State Population
+
+```r
+sd(state$Population)
+IQR(state$Population)
+mad(state$Population)
+```
+
+
 ##
 
 [0101]: #0101_elements_of_structured_data
@@ -174,6 +184,7 @@ median \(m\)
 [0104]: #0104_estimates_of_variability
 [010401]: #010401_standard_deviation_and_related_estimates
 [010402]: #010402_estimates_based_on_percentiles
+[010403]: #010403_example_variability_estimated_of_state_population
 [0105]: #0105_exploring_the_data_distribution
 [0106]: #0106_exploring_binary_and_categorical_data
 [0107]: #0107_correlation
