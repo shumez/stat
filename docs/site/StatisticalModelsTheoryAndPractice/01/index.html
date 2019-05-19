@@ -55,6 +55,21 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Practical Statistics for Data Scientists</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../PracticalStatisticsForDataScientists/">Intro</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../PracticalStatisticsForDataScientists/01/">01. Exploratory Data Analysis</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Statistics 4e</span>
     <ul class="subnav">
                 <li class="">
@@ -174,7 +189,7 @@ Filename:   note.md
 Project:    /Users/shume/Developer/stat/StatisticalModelsTheoryAndPractice/01
 Author:     shumez <https://github.com/shumez>
 Created:    2019-05-18 15:13:3
-Modified:   2019-05-18 20:57:39
+Modified:   2019-05-19 12:26:42
 -----
 Copyright (c) 2019 shumez
 -->
@@ -199,12 +214,11 @@ Copyright (c) 2019 shumez
 <p>handled by </p>
 <ul>
 <li>subdividing the population (<strong>stratification</strong> aka <strong>cross-tabulation</strong>)</li>
-<li>
-<p>modeling</p>
-</li>
-<li>
-<p>control: subject NOT get treatment</p>
-</li>
+<li>modeling</li>
+</ul>
+<p>"control"</p>
+<ul>
+<li>control: subject NOT get treatment</li>
 <li>controlled experiment: study where the investigators decide who will be in the treatment group</li>
 </ul>
 <p><strong>association</strong></p>
@@ -215,8 +229,8 @@ problem w/ cross-tabulation</p>
 <p>Health Insurance Plan</p>
 <p>intention-to-treat analysis</p>
 <h2 id="0103_snow_on_cholera">01.03. Snow on cholera<a class="headerlink" href="#0103_snow_on_cholera" title="Permanent link">&para;</a></h2>
-<p><a href="https://en.wikipedia.org/wiki/John_Snow"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Chol_an.gif/300px-Chol_an.gif" /></a>
-<a href="https://en.wikipedia.org/wiki/John_Snow"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Choleramaplondon1866.png/300px-Choleramaplondon1866.png" /></a></p>
+<p><a href="https://en.wikipedia.org/wiki/John_Snow"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Chol_an.gif/300px-Chol_an.gif" title="outbreak map" /></a>
+<a href="https://en.wikipedia.org/wiki/John_Snow"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Choleramaplondon1866.png/300px-Choleramaplondon1866.png" title="outbreak map " /></a></p>
 <p><strong>natural experiment</strong>: observational study as if randomized by nature</p>
 <p><a href="https://en.wikipedia.org/wiki/John_Snow">John Snow</a> </p>
 <p><a href="https://en.wikipedia.org/wiki/Soho#Cholera_outbreak">Broad street pump</a> in Soho</p>
@@ -225,8 +239,59 @@ problem w/ cross-tabulation</p>
 <p>Legendre (1805), Gauss (1809)</p>
 <p>Yule (1899) </p>
 <p>
-<script type="math/tex; mode=display"> \Delta \text{Paup} = a + b \times \Delta\text{Out} + c \times  \Delta\text{Old} + d \times \Delta\text{Pop} + \text{error} </script>
+<script type="math/tex; mode=display"> \Delta \text{Paup} = a + b \times \Delta\text{Out} + c \times \Delta\text{Old} + d \times \Delta\text{Pop} + \text{error} \tag{1} </script>
 </p>
+<p>
+<script type="math/tex">\Delta</script> percentaage change over time</p>
+<p>
+<script type="math/tex">\text{Paup}</script> percentage of paupers
+<script type="math/tex">\text{Out}</script> out-relief ration <script type="math/tex">\frac{N}{D}</script>
+<script type="math/tex; mode=display"> N = \text{number on welfare outside the poor-house} </script>
+<script type="math/tex; mode=display"> D = \text{number inside} </script>
+<script type="math/tex">\text{Old}</script> percentage of the population aged over 65
+<script type="math/tex">\text{Pop}</script> population</p>
+<p>
+<script type="math/tex; mode=display"> \sum{( \Delta\text{Paup} - a - b \times \Delta\text{Out} - c \times \Delta\text{Old} - d \times \Delta\text{Pop} )^2} </script>
+</p>
+<p>
+<script type="math/tex; mode=display"> \Delta \text{Paup} = 13.19 + 0.755 \Delta\text{Out} - 0.022 \Delta\text{Old} - 0.322 \Delta\text{Pop} + \text{error} \tag{2} </script>
+</p>
+<p>
+<script type="math/tex; mode=display"> \Delta \text{Paup} = 1.36 + 0.324 \Delta\text{Out} + 1.37 \Delta\text{Old} - 0.369 \Delta\text{Pop} + \text{error} \tag{3} </script>
+</p>
+<p>
+<script type="math/tex">\Delta\text{Out}</script> relatively large and pos</p>
+<p>
+<script type="math/tex; mode=display">
+    \begin{align*}
+        \Delta\text{Out} &= 5 - 100 = -95 \\
+        \Delta\text{Old} &= 104 - 100 = 4 \\
+        \Delta\text{Pop} &= 136 - 100 = 36
+    \end{align*}
+</script>
+</p>
+<p>
+<script type="math/tex">\Delta\text{Paup}</script>
+</p>
+<p>
+<script type="math/tex; mode=display"> 13.19 + 0.755 \times (-95) - 0.022 \times 4 - 0.322 \times 36 = -70 </script>
+</p>
+<p>actual val for <script type="math/tex">\Delta\text{Paup}</script>
+<script type="math/tex">-73</script>, so <script type="math/tex">\text{error}</script>
+<script type="math/tex">-3</script>
+</p>
+<ul>
+<li><strong>Quantitative inference</strong>:<ul>
+<li>
+<script type="math/tex">\Delta\text{Out} +1\text{percent age pts}</script> &rArr; <script type="math/tex">\Delta\text{Paup} +0.755\text{pecentage pts}</script>
+</li>
+</ul>
+</li>
+<li><strong>Qualitative inference</strong>:<ul>
+<li>Out-relief causes an increase in pauperism</li>
+</ul>
+</li>
+</ul>
 <h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <!-- ref -->
 

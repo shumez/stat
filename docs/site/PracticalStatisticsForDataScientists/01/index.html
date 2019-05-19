@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>01. Exploratory Data Analysis - Stat</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "01. Exploratory Data Analysis";
+    var mkdocs_page_input_path = "PracticalStatisticsForDataScientists/01/index.md";
+    var mkdocs_page_url = "/PracticalStatisticsForDataScientists/01/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Stat</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Practical Statistics for Data Scientists</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Intro</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">01. Exploratory Data Analysis</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#toc">ToC</a></li>
+    
+
+    <li class="toctree-l3"><a href="#0101_elements_of_structured_data">01.01. Elements of Structured Data</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#010101_further_reading">01.01.01. Further Reading</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#0102_rectangular_data">01.02. Rectangular Data</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#010201_data_frames_and_indexed">01.02.01. Data Frames and Indexed</a></li>
+        
+            <li><a class="toctree-l4" href="#010202_graph_data">01.02.02. Graph Data</a></li>
+        
+            <li><a class="toctree-l4" href="#010203_further_reading">01.02.03. Further Reading</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#0103_estimates_of_location">01.03. Estimates of Location</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#010301_mean">01.03.01. Mean</a></li>
+        
+            <li><a class="toctree-l4" href="#010302_median_and_robust_estimates">01.03.02. Median and Robust Estimates</a></li>
+        
+            <li><a class="toctree-l4" href="#010303_example_location_estimates_of_population_and_murder_rates">01.03.03. Example: Location Estimates of Population and Murder Rates</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Statistics 4e</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Statistics4e/">Intro</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Statistical Models: Theory and Practice</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../StatisticalModelsTheoryAndPractice/">Intro</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../StatisticalModelsTheoryAndPractice/01/">01. Observational Studies and Experiments</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../StatisticalModelsTheoryAndPractice/02/index.md">02. The Regression Line</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../StatisticalModelsTheoryAndPractice/03/index.md">03. Matrix Algebra</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../StatisticalModelsTheoryAndPractice/04/index.md">04. Multiple Regression</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../StatisticalModelsTheoryAndPractice/05/index.md">05. Multiple Regreesion: Special Topics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../StatisticalModelsTheoryAndPractice/06/index.md">06. Path Models</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../StatisticalModelsTheoryAndPractice/07/index.md">07. Maximum Likelihood</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../StatisticalModelsTheoryAndPractice/08/index.md">08. The Bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../StatisticalModelsTheoryAndPractice/09/index.md">09. Simultaneous Equations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../StatisticalModelsTheoryAndPractice/10/index.md">10. Issues in Statistical Modeling</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Stat</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Practical Statistics for Data Scientists &raquo;</li>
+        
+      
+    
+    <li>01. Exploratory Data Analysis</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <!--
+Filename:   index.md
+Project:    /Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
+Author:     shumez <https://github.com/shumez>
+Created:    2019-05-19 13:17:3
+Modified:   2019-05-19 14:43:23
+-----
+Copyright (c) 2019 shumez
+-->
+
+<h1 id="01_exploratory_data_analysis">01. Exploratory Data Analysis<a class="headerlink" href="#01_exploratory_data_analysis" title="Permanent link">&para;</a></h1>
+<h2 id="toc">ToC<a class="headerlink" href="#toc" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#0101_elements_of_structured_data">01.01. Elements of Structured Data</a><ul>
+<li><a href="#010101_further_reading">01.01.01. Further Reading</a></li>
+</ul>
+</li>
+<li><a href="#0102_rectangular_data">01.02. Rectangular Data</a><ul>
+<li><a href="#010201_data_frames_and_indexed">01.02.01. Data Frames and Indexed</a></li>
+<li><a href="#010202_graph_data">01.02.02. Graph Data</a></li>
+<li><a href="#010203_further_reading">01.02.03. Further Reading</a></li>
+</ul>
+</li>
+<li><a href="#0103_estimated_of_location">01.03. Estimates of Location</a><ul>
+<li><a href="#010301_mean">01.03.01. Mean</a></li>
+<li><a href="#010302_median_and_robust_estimates">01.03.02. Median and Robust Estimates</a><ul>
+<li><a href="#01030201_outliers">01.03.02.01. Outliers</a></li>
+</ul>
+</li>
+<li><a href="#010303_example_location_estimates_of_population_and_murder_rates">01.03.03. Example: Location Estimates of Population and Murder Rates</a></li>
+</ul>
+</li>
+<li><a href="#0104_estimates_of_variability">01.04. Estimates of Variability</a></li>
+<li><a href="#0105_exploring_the_data_distribution">01.05. Exploring the Data Distribution</a></li>
+<li><a href="#0106_exploring_binary_and_categorical_data">01.06. Exploring Binary and Categorical Data</a></li>
+<li><a href="#0107_correlation">01.07. Correlation</a></li>
+<li><a href="#0108_exploring_two_or_more_variables">01.08. Exploring Two or More Variables</a></li>
+<li><a href="#0109_conclusion">01.09. Conclusion</a></li>
+</ul>
+<h2 id="0101_elements_of_structured_data">01.01. Elements of Structured Data<a class="headerlink" href="#0101_elements_of_structured_data" title="Permanent link">&para;</a></h2>
+<ul>
+<li>numeric<ul>
+<li>contiuous</li>
+<li>discrete</li>
+</ul>
+</li>
+<li>categorical<ul>
+<li>binary</li>
+<li>ordinal: ordered</li>
+</ul>
+</li>
+</ul>
+<h3 id="010101_further_reading">01.01.01. Further Reading<a class="headerlink" href="#010101_further_reading" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.r-tutor.com/r-introduction/basic-data-types">R Introduction / Basic data types</a></li>
+<li><a href="https://www.w3schools.com/sql/sql_datatypes.asp">SQL Data Types</a></li>
+</ul>
+<h2 id="0102_rectangular_data">01.02. Rectangular Data<a class="headerlink" href="#0102_rectangular_data" title="Permanent link">&para;</a></h2>
+<h3 id="010201_data_frames_and_indexed">01.02.01. Data Frames and Indexed<a class="headerlink" href="#010201_data_frames_and_indexed" title="Permanent link">&para;</a></h3>
+<h3 id="010202_graph_data">01.02.02. Graph Data<a class="headerlink" href="#010202_graph_data" title="Permanent link">&para;</a></h3>
+<h3 id="010203_further_reading">01.02.03. Further Reading<a class="headerlink" href="#010203_further_reading" title="Permanent link">&para;</a></h3>
+<h2 id="0103_estimates_of_location">01.03. Estimates of Location<a class="headerlink" href="#0103_estimates_of_location" title="Permanent link">&para;</a></h2>
+<h3 id="010301_mean">01.03.01. Mean<a class="headerlink" href="#010301_mean" title="Permanent link">&para;</a></h3>
+<p>
+<script type="math/tex; mode=display"> \text{Mean} = \bar{x} = \frac{\sum_i^N{x_i}}{N} </script>
+</p>
+<p><strong>trimmed mean</strong></p>
+<p>
+<script type="math/tex">p</script> smallest and largest val omitted</p>
+<p>
+<script type="math/tex; mode=display"> \text{Trimmed Mean} = \bar{x} = \frac{\sum_{i=p+1}^{N-p}{x_{(i)}}}{N-2p} </script>
+</p>
+<p><strong>weighted mean</strong> </p>
+<p>multiplying data val <script type="math/tex">x_i</script> by weight <script type="math/tex">w_i</script> &amp; dividing sum of weights</p>
+<p>
+<script type="math/tex; mode=display"> \text{Weighted Mean} = \bar{x}_w = \frac{\sum_{i=1}^N{w_i x_i}}{\sum_i^N{w_i}} </script>
+</p>
+<h3 id="010302_median_and_robust_estimates">01.03.02. Median and Robust Estimates<a class="headerlink" href="#010302_median_and_robust_estimates" title="Permanent link">&para;</a></h3>
+<p><strong>weighted median</strong></p>
+<h4 id="01030201_outliers">01.03.02.01. Outliers<a class="headerlink" href="#01030201_outliers" title="Permanent link">&para;</a></h4>
+<p>median: <strong>robust</strong> estimate of location since NOT influenced by <strong>outliers</strong></p>
+<h3 id="010303_example_location_estimates_of_population_and_murder_rates">01.03.03. Example: Location Estimates of Population and Murder Rates<a class="headerlink" href="#010303_example_location_estimates_of_population_and_murder_rates" title="Permanent link">&para;</a></h3>
+<h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<!-- ref -->
+
+<!-- fig -->
+
+<!-- <style type="text/css">
+    img{width: 51%; float: right;}
+</style> -->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../Statistics4e/" class="btn btn-neutral float-right" title="Intro">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../" class="btn btn-neutral" title="Intro"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2018 - 2019 <a href="https://github.com/shumez">shumez</a>
+</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../Statistics4e/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
