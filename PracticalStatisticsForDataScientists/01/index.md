@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-19 16:04:30
+Modified: 	2019-05-19 16:07:12
 -----
 Copyright (c) 2019 shumez
 -->
@@ -100,6 +100,12 @@ weightedMedian(state$Murder.Rate, w = state$Population)
 
 
 ### 01.03.04. Further Reading
+
+
+## 01.04. Estimates of Variability
+
+**variability**, aka, **dispersion**
+
 
 
 ##
