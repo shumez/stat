@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-20 11:04:37
+Modified: 	2019-05-20 11:19:12
 -----
 Copyright (c) 2019 shumez
 -->
@@ -30,6 +30,7 @@ Copyright (c) 2019 shumez
     * [01.04.03. Example: Variability Estimated of State Population][010403]
 * [01.05. Exploring the Data Distribution][0105]
     * [01.05.01. Percentiles and Boxplots][010501]
+    * [01.05.02. Frequency Table and Histograms][010502]
 * [01.06. Exploring Binary and Categorical Data][0106]
 * [01.07. Correlation][0107]
 * [01.08. Exploring Two or More Variables][0108]
@@ -196,6 +197,22 @@ boxplot(state$Population/1000000, ylab='Population (millions)')
 ```
 
 
+### 01.05.02. Frequency Table and Histograms
+
+[![Fig.1-3][fig0103]][fig0103]
+
+```r
+breaks <- seq(from=min(state$Population), to=max(state$Population), length=11)
+pop_freq <- cut(state$Population, breaks=breaks, right=TRUE, include.lowest=TRUE)
+table(pop_freq)
+
+hist(state$Population, breaks=breaks, main='Population', xlab='Population (millions)')
+```
+
+
+
+
+
 ##
 
 [0101]: #0101_elements_of_structured_data
@@ -216,6 +233,7 @@ boxplot(state$Population/1000000, ylab='Population (millions)')
 [010403]: #010403_example_variability_estimated_of_state_population
 [0105]: #0105_exploring_the_data_distribution
 [010501]: #010501_percentiles_and_boxplots
+[010502]: #010502_frequency_table_and_histograms
 [0106]: #0106_exploring_binary_and_categorical_data
 [0107]: #0107_correlation
 [0108]: #0108_exploring_two_or_more_variables
@@ -226,7 +244,9 @@ boxplot(state$Population/1000000, ylab='Population (millions)')
 [SQL Data Types]: https://www.w3schools.com/sql/sql_datatypes.asp
 
 <!-- fig -->
-[fig0102]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/01-02.png
+[fig0102]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0102.png
+[fig0103]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0103.png
+
 
 <style type="text/css">
 	img{width: 51%; float: right;}
