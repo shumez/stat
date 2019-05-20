@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-20 11:19:12
+Modified: 	2019-05-20 11:32:54
 -----
 Copyright (c) 2019 shumez
 -->
@@ -31,6 +31,7 @@ Copyright (c) 2019 shumez
 * [01.05. Exploring the Data Distribution][0105]
     * [01.05.01. Percentiles and Boxplots][010501]
     * [01.05.02. Frequency Table and Histograms][010502]
+    * [01.05.03. Density Estimates][010503]
 * [01.06. Exploring Binary and Categorical Data][0106]
 * [01.07. Correlation][0107]
 * [01.08. Exploring Two or More Variables][0108]
@@ -210,7 +211,14 @@ hist(state$Population, breaks=breaks, main='Population', xlab='Population (milli
 ```
 
 
+### 01.05.03. Density Estimates
 
+[![Fig.1.4][fig0104]][fig0104]
+
+```r
+hist(state$Murder.Rate, freq=FALSE, main='Murder Rate', xlab='Murder Rate')
+lines(density(state$Murder.Rate), lwd=3, col='blue')
+```
 
 
 ##
@@ -234,6 +242,7 @@ hist(state$Population, breaks=breaks, main='Population', xlab='Population (milli
 [0105]: #0105_exploring_the_data_distribution
 [010501]: #010501_percentiles_and_boxplots
 [010502]: #010502_frequency_table_and_histograms
+[010503]: #010503_density_estimates
 [0106]: #0106_exploring_binary_and_categorical_data
 [0107]: #0107_correlation
 [0108]: #0108_exploring_two_or_more_variables
@@ -246,6 +255,7 @@ hist(state$Population, breaks=breaks, main='Population', xlab='Population (milli
 <!-- fig -->
 [fig0102]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0102.png
 [fig0103]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0103.png
+[fig0104]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0104.png
 
 
 <style type="text/css">
