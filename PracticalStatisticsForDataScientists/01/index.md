@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-20 10:14:25
+Modified: 	2019-05-20 10:23:47
 -----
 Copyright (c) 2019 shumez
 -->
@@ -170,6 +170,8 @@ mad(state$Population)
 ### 01.04.04. Further Reading
 
 
+
+## 01.05. Exploring the Data Distribution
 
 
 ##
