@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-19 17:40:5
+Modified: 	2019-05-20 10:14:25
 -----
 Copyright (c) 2019 shumez
 -->
@@ -165,6 +165,11 @@ sd(state$Population)
 IQR(state$Population)
 mad(state$Population)
 ```
+
+
+### 01.04.04. Further Reading
+
+
 
 
 ##
