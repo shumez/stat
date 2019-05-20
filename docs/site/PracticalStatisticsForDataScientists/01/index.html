@@ -116,7 +116,25 @@
         
             <li><a class="toctree-l4" href="#010403_example_variability_estimated_of_state_population">01.04.03. Example: Variability Estimated of State Population</a></li>
         
+            <li><a class="toctree-l4" href="#010404_further_reading">01.04.04. Further Reading</a></li>
+        
         </ul>
+    
+
+    <li class="toctree-l3"><a href="#0105_exploring_the_data_distribution">01.05. Exploring the Data Distribution</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#010501_percentiles_and_boxplots">01.05.01. Percentiles and Boxplots</a></li>
+        
+            <li><a class="toctree-l4" href="#010502_frequency_table_and_histograms">01.05.02. Frequency Table and Histograms</a></li>
+        
+            <li><a class="toctree-l4" href="#010503_density_estimates">01.05.03. Density Estimates</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#0106_exploring_binary_and_categorical_data">01.06. Exploring Binary and Categorical Data</a></li>
     
 
     </ul>
@@ -227,7 +245,7 @@ Filename:   index.md
 Project:    /Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author:     shumez <https://github.com/shumez>
 Created:    2019-05-19 13:17:3
-Modified:   2019-05-19 17:40:5
+Modified:   2019-05-20 14:04:16
 -----
 Copyright (c) 2019 shumez
 -->
@@ -261,7 +279,12 @@ Copyright (c) 2019 shumez
 <li><a href="#010403_example_variability_estimated_of_state_population">01.04.03. Example: Variability Estimated of State Population</a></li>
 </ul>
 </li>
-<li><a href="#0105_exploring_the_data_distribution">01.05. Exploring the Data Distribution</a></li>
+<li><a href="#0105_exploring_the_data_distribution">01.05. Exploring the Data Distribution</a><ul>
+<li><a href="#010501_percentiles_and_boxplots">01.05.01. Percentiles and Boxplots</a></li>
+<li><a href="#010502_frequency_table_and_histograms">01.05.02. Frequency Table and Histograms</a></li>
+<li><a href="#010503_density_estimates">01.05.03. Density Estimates</a></li>
+</ul>
+</li>
 <li><a href="#0106_exploring_binary_and_categorical_data">01.06. Exploring Binary and Categorical Data</a></li>
 <li><a href="#0107_correlation">01.07. Correlation</a></li>
 <li><a href="#0108_exploring_two_or_more_variables">01.08. Exploring Two or More Variables</a></li>
@@ -370,14 +393,50 @@ IQR(state$Population)
 mad(state$Population)
 </code></pre>
 
+<h3 id="010404_further_reading">01.04.04. Further Reading<a class="headerlink" href="#010404_further_reading" title="Permanent link">&para;</a></h3>
+<h2 id="0105_exploring_the_data_distribution">01.05. Exploring the Data Distribution<a class="headerlink" href="#0105_exploring_the_data_distribution" title="Permanent link">&para;</a></h2>
+<p><strong>moments</strong></p>
+<p>3rd moment <strong>skewness</strong>, 4th moment <strong>kurtosis</strong></p>
+<h3 id="010501_percentiles_and_boxplots">01.05.01. Percentiles and Boxplots<a class="headerlink" href="#010501_percentiles_and_boxplots" title="Permanent link">&para;</a></h3>
+<p><a href="https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0102.png"><img alt="Fig.1-2" src="https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0102.png" /></a></p>
+<p>quantiles (25th, 50th, 75th percentiles)</p>
+<p>deciles (10th, 20th, ..., 90th percentiles)</p>
+<pre><code class="r">quantile(state$Murder.Rate, p=c(.05, .25, .5, .75, .95))
+</code></pre>
+
+<pre><code class="r">boxplot(state$Population/1000000, ylab='Population (millions)')
+</code></pre>
+
+<h3 id="010502_frequency_table_and_histograms">01.05.02. Frequency Table and Histograms<a class="headerlink" href="#010502_frequency_table_and_histograms" title="Permanent link">&para;</a></h3>
+<p><a href="https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0103.png"><img alt="Fig.1-3" src="https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0103.png" /></a></p>
+<pre><code class="r">breaks &lt;- seq(from=min(state$Population), to=max(state$Population), length=11)
+pop_freq &lt;- cut(state$Population, breaks=breaks, right=TRUE, include.lowest=TRUE)
+table(pop_freq)
+
+hist(state$Population, breaks=breaks, main='Population', xlab='Population (millions)')
+</code></pre>
+
+<h3 id="010503_density_estimates">01.05.03. Density Estimates<a class="headerlink" href="#010503_density_estimates" title="Permanent link">&para;</a></h3>
+<p><a href="https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0104.png"><img alt="Fig.1.4" src="https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0104.png" /></a></p>
+<pre><code class="r">hist(state$Murder.Rate, freq=FALSE, main='Murder Rate', xlab='Murder Rate')
+lines(density(state$Murder.Rate), lwd=3, col='blue')
+</code></pre>
+
+<h2 id="0106_exploring_binary_and_categorical_data">01.06. Exploring Binary and Categorical Data<a class="headerlink" href="#0106_exploring_binary_and_categorical_data" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Mode</strong>: most commonly occurring category / val </li>
+<li><strong>Expected Value</strong></li>
+<li><strong>Bar Charts</strong></li>
+<li><strong>Pie Charts</strong></li>
+</ul>
 <h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <!-- ref -->
 
 <!-- fig -->
 
-<!-- <style type="text/css">
+<style type="text/css">
     img{width: 51%; float: right;}
-</style> -->
+</style>
               
             </div>
           </div>
