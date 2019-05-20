@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-20 11:32:54
+Modified: 	2019-05-20 14:04:16
 -----
 Copyright (c) 2019 shumez
 -->
@@ -183,6 +183,8 @@ mad(state$Population)
 
 ### 01.05.01. Percentiles and Boxplots
 
+[![Fig.1-2][fig0102]][fig0102]
+
 quantiles (25th, 50th, 75th percentiles)
 
 deciles (10th, 20th, ..., 90th percentiles)
@@ -190,8 +192,6 @@ deciles (10th, 20th, ..., 90th percentiles)
 ```r
 quantile(state$Murder.Rate, p=c(.05, .25, .5, .75, .95))
 ```
-
-[![Fig.1-2][fig0102]][fig0102]
 
 ```r
 boxplot(state$Population/1000000, ylab='Population (millions)')
@@ -219,6 +219,15 @@ hist(state$Population, breaks=breaks, main='Population', xlab='Population (milli
 hist(state$Murder.Rate, freq=FALSE, main='Murder Rate', xlab='Murder Rate')
 lines(density(state$Murder.Rate), lwd=3, col='blue')
 ```
+
+
+## 01.06. Exploring Binary and Categorical Data
+
+* **Mode**: most commonly occurring category / val 
+* **Expected Value**
+* **Bar Charts**
+* **Pie Charts**
+
 
 
 ##
