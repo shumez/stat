@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-22 20:38:39
+Modified: 	2019-05-22 20:40:40
 -----
 Copyright (c) 2019 shumez
 -->
@@ -260,6 +260,18 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 ### 01.07.01. Scatterplots
 
 [![Fig.1-7][fig0107]][fig0107]
+
+
+## 01.08. Exploring Two or More Variables
+
+* **Contingency Tables**
+* **Hexagonal Binning**
+* **Contour Plots**
+* **Violin Plots**
+
+
+
+
 
 ##
 
