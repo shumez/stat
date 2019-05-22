@@ -51,9 +51,10 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 # 01.06.
 cause = c('Carrier', 'ATC', 'Weather', 'Security', 'Inbound')
 delay = c(23.02, 30.40, 4.03, 0.12, 42.43)
-dfw = data.frame(delay=delay, row.names=cause)
+dfw = data.frame(cause=cause, delay=delay)
 View(dfw)
+
 barplot(dfw$delay)
-
-
+p <- ggplot(dfw) + geom_col(aes(cause, delay))
+p
 
