@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-22 18:14:43
+Modified: 	2019-05-22 18:18:41
 -----
 Copyright (c) 2019 shumez
 -->
@@ -246,6 +246,15 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 
 * [misleading graphs]
 
+
+## 01.07. Correlation
+
+* **Correlation coefficient**
+* **Correlation mat**
+* **Sctter plot**
+
+
+\[ r = \frac{\sum_{i=1}^N{(x_i - \bar{x}) (y_i - \bar{y})}}{(N-1) s_x s_y} \]
 
 
 ##
