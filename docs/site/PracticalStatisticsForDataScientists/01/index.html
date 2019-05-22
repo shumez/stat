@@ -136,6 +136,19 @@
 
     <li class="toctree-l3"><a href="#0106_exploring_binary_and_categorical_data">01.06. Exploring Binary and Categorical Data</a></li>
     
+        <ul>
+        
+            <li><a class="toctree-l4" href="#010601_mode">01.06.01. Mode</a></li>
+        
+            <li><a class="toctree-l4" href="#010602_expected_value">01.06.02. Expected Value</a></li>
+        
+            <li><a class="toctree-l4" href="#010603_further_reading">01.06.03 Further Reading</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#0107_correlation">01.07. Correlation</a></li>
+    
 
     </ul>
                 </li>
@@ -213,7 +226,7 @@ Filename:   index.md
 Project:    /Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author:     shumez <https://github.com/shumez>
 Created:    2019-05-19 13:17:3
-Modified:   2019-05-20 14:04:16
+Modified:   2019-05-22 18:18:41
 -----
 Copyright (c) 2019 shumez
 -->
@@ -253,7 +266,12 @@ Copyright (c) 2019 shumez
 <li><a href="#010503_density_estimates">01.05.03. Density Estimates</a></li>
 </ul>
 </li>
-<li><a href="#0106_exploring_binary_and_categorical_data">01.06. Exploring Binary and Categorical Data</a></li>
+<li><a href="#0106_exploring_binary_and_categorical_data">01.06. Exploring Binary and Categorical Data</a><ul>
+<li><a href="#010601_mode">01.06.01. Mode</a></li>
+<li><a href="#010602_expected_value">01.06.02. Expected Value</a></li>
+<li><a href="#010603_further_reading">01.06.03 Further Reading</a></li>
+</ul>
+</li>
 <li><a href="#0107_correlation">01.07. Correlation</a></li>
 <li><a href="#0108_exploring_two_or_more_variables">01.08. Exploring Two or More Variables</a></li>
 <li><a href="#0109_conclusion">01.09. Conclusion</a></li>
@@ -397,6 +415,25 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 <li><strong>Bar Charts</strong></li>
 <li><strong>Pie Charts</strong></li>
 </ul>
+<h3 id="010601_mode">01.06.01. Mode<a class="headerlink" href="#010601_mode" title="Permanent link">&para;</a></h3>
+<p><strong>mode</strong>: simple summary for categorical data</p>
+<h3 id="010602_expected_value">01.06.02. Expected Value<a class="headerlink" href="#010602_expected_value" title="Permanent link">&para;</a></h3>
+<p>
+<script type="math/tex; mode=display"> \text{EV} = 0.05 \times 300 + 0.15 \times 50 + 0.80 \times 0 = 22.5 </script>
+</p>
+<h3 id="010603_further_reading">01.06.03 Further Reading<a class="headerlink" href="#010603_further_reading" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://passyworldofmathematics.com/misleading-graphs/">misleading graphs</a></li>
+</ul>
+<h2 id="0107_correlation">01.07. Correlation<a class="headerlink" href="#0107_correlation" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Correlation coefficient</strong></li>
+<li><strong>Correlation mat</strong></li>
+<li><strong>Sctter plot</strong></li>
+</ul>
+<p>
+<script type="math/tex; mode=display"> r = \frac{\sum_{i=1}^N{(x_i - \bar{x}) (y_i - \bar{y})}}{(N-1) s_x s_y} </script>
+</p>
 <h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <!-- ref -->
 
