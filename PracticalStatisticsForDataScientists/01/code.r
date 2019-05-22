@@ -80,3 +80,19 @@ p
 
 p <- ggplot(sp500_px, aes(T, VZ)) + geom_point(alpha=.5)
 p
+
+
+# 01.08. 
+house0 <- read.csv(file.path(dir_data, 'kc_tax.csv'))
+View(house0)
+
+p <- ggplot(house0, aes(SqFtTotLiving, TaxAssessedValue)) + stat_binhex(colour='white')
+p <- p + theme_bw() + scale_fill_gradient(limits=c(0, 9000), low = 'white', high = 'blue')# + labs(x=)
+p
+
+
+
+
+
+
+
