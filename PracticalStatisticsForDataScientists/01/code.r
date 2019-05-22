@@ -1,12 +1,14 @@
 # code
 
 setwd('~/Developer/stat/PracticalStatisticsForDataScientists/01/')
+dir_data = '~/Developer/stat/PracticalStatisticsForDataScientists/data/'
 
-state <- read.csv(file = 'data/state.csv')
+state <- read.csv(file = file.path(dir_data, 'state.csv'))
 View(state)
 
 library(ggplot2)
 library(GGally)
+
 dat_state = data.frame(Population = state$Population, MurderRate=state$Murder.Rate, row.names = state$State)
 View(dat_state)
 p = ggpairs(dat_state)
@@ -49,12 +51,32 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 
 
 # 01.06.
-cause = c('Carrier', 'ATC', 'Weather', 'Security', 'Inbound')
-delay = c(23.02, 30.40, 4.03, 0.12, 42.43)
-dfw = data.frame(cause=cause, delay=delay)
+dfw = read.csv(file.path(dir_data, 'dfw_airline.csv'))
 View(dfw)
+# cause = c('Carrier', 'ATC', 'Weather', 'Security', 'Inbound')
+# delay = c(23.02, 30.40, 4.03, 0.12, 42.43)
+# dfw = data.frame(cause=cause, delay=delay)
 
-barplot(dfw$delay)
+barplot(dfw)
 p <- ggplot(dfw) + geom_col(aes(cause, delay))
 p
 
+# 01.07. 
+sp500_px = read.csv(file.path(dir_data, 'sp500_px.csv'), row.names = 1)
+sp500_sym = read.csv(file.path(dir_data, 'sp500_sym.csv'))
+View(sp500_px)
+View(sp500_sym)
+
+etfs = sp500_px[row.names(sp500_px) > "2012-07-01", 
+                sp500_sym[sp500_sym$sector=="etf", 'symbol']]
+View(etfs)
+
+install.packages("corrplot")
+library(corrplot)#, method="ellipse")
+corrplot(cor(etfs))
+p <- ggcorr(etfs, palette='Viridis') + scale_colour_viridis_c()
+p
+
+
+p <- ggplot(sp500_px, aes(T, VZ)) + geom_point(alpha=.5)
+p
