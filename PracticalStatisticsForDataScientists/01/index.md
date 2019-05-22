@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-20 14:04:16
+Modified: 	2019-05-22 17:58:10
 -----
 Copyright (c) 2019 shumez
 -->
@@ -33,6 +33,7 @@ Copyright (c) 2019 shumez
     * [01.05.02. Frequency Table and Histograms][010502]
     * [01.05.03. Density Estimates][010503]
 * [01.06. Exploring Binary and Categorical Data][0106]
+    * [01.06.01. Mode][010601]
 * [01.07. Correlation][0107]
 * [01.08. Exploring Two or More Variables][0108]
 * [01.09. Conclusion][0109]
@@ -229,6 +230,14 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 * **Pie Charts**
 
 
+### 01.06.01. Mode
+
+**mode**: simple summary for categorical data
+
+
+
+
+
 
 ##
 
@@ -253,6 +262,7 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 [010502]: #010502_frequency_table_and_histograms
 [010503]: #010503_density_estimates
 [0106]: #0106_exploring_binary_and_categorical_data
+[010601]: #010601_mode
 [0107]: #0107_correlation
 [0108]: #0108_exploring_two_or_more_variables
 [0109]: #0109_conclusion
