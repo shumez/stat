@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-22 18:18:41
+Modified: 	2019-05-22 20:38:39
 -----
 Copyright (c) 2019 shumez
 -->
@@ -37,6 +37,7 @@ Copyright (c) 2019 shumez
     * [01.06.02. Expected Value][010602]
     * [01.06.03 Further Reading][010603]
 * [01.07. Correlation][0107]
+    * [01.07.01. Scatterplots][010701]
 * [01.08. Exploring Two or More Variables][0108]
 * [01.09. Conclusion][0109]
 
@@ -256,6 +257,9 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 
 \[ r = \frac{\sum_{i=1}^N{(x_i - \bar{x}) (y_i - \bar{y})}}{(N-1) s_x s_y} \]
 
+### 01.07.01. Scatterplots
+
+[![Fig.1-7][fig0107]][fig0107]
 
 ##
 
@@ -284,6 +288,7 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 [010602]: #010602_expected_value
 [010603]: #010603_further_reading
 [0107]: #0107_correlation
+[010701]: #010701_scatterplots
 [0108]: #0108_exploring_two_or_more_variables
 [0109]: #0109_conclusion
 
@@ -296,6 +301,7 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 [fig0102]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0102.png
 [fig0103]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0103.png
 [fig0104]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0104.png
+[fig0107]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0107.png
 
 
 <style type="text/css">
