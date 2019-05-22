@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-22 20:40:40
+Modified: 	2019-05-22 20:44:22
 -----
 Copyright (c) 2019 shumez
 -->
@@ -39,6 +39,7 @@ Copyright (c) 2019 shumez
 * [01.07. Correlation][0107]
     * [01.07.01. Scatterplots][010701]
 * [01.08. Exploring Two or More Variables][0108]
+    * [01.08.01. Hexagonal Binning and Contours (plotting numeric vs. numeric)][010801]
 * [01.09. Conclusion][0109]
 
 
@@ -270,6 +271,8 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 * **Violin Plots**
 
 
+### 01.08.01. Hexagonal Binning and Contours (plotting numeric vs. numeric)
+
 
 
 
@@ -302,6 +305,7 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 [0107]: #0107_correlation
 [010701]: #010701_scatterplots
 [0108]: #0108_exploring_two_or_more_variables
+[010801]: #010801_hexagonal_binning_and_contours_plotting_numeric_vs_numeric
 [0109]: #0109_conclusion
 
 <!-- ref -->
