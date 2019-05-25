@@ -3,17 +3,19 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/IntroductoryStatistics
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-25 13:08:3
-Modified: 	2019-05-25 13:22:10
+Modified: 	2019-05-25 14:32:19
 -----
 Copyright (c) 2019 shumez
 -->
 
 # [Introductory Statistics]
 
+[![Cover][cover]][cover]
+
 ## ToC
 
 * [01. Sampling and Data][01]
-    * [][0101]
+    * [01.01. Definitions of Statistics, Probability, and Key Terms][0101]
 * [02. Descriptive Statistics][02]
 * [03. Probability Topics][03]
 * [04. Discrete Random Variables][04]
@@ -34,14 +36,15 @@ Copyright (c) 2019 shumez
 
 
 ##
-[01]: #
-[0101]: #
+[01]: 01
+[0101]: 01/#0101_definitions_of_statistics_probability_and_key_terms
 
 <!-- ref -->
 [Introductory Statistics]: https://cnx.org/contents/MBiUQmmY@23.30:2T34_25K@14
 
 <!-- fig -->
+[cover]: https://images-na.ssl-images-amazon.com/images/I/41q6Y5cgxyL.jpg
 
-<!-- <style type="text/css">
+<style type="text/css">
 	img{width: 51%; float: right;}
-</style> -->
+</style>
