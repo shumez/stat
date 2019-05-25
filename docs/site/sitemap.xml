@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://shumez.github.io/</loc>
-     <lastmod>2019-05-22</lastmod>
+     <lastmod>2019-05-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://shumez.github.io/IntroductoryStatistics/</loc>
+     <lastmod>2019-05-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://shumez.github.io/IntroductoryStatistics/01/</loc>
+     <lastmod>2019-05-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://shumez.github.io/PracticalStatisticsForDataScientists/</loc>
-     <lastmod>2019-05-22</lastmod>
+     <lastmod>2019-05-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://shumez.github.io/PracticalStatisticsForDataScientists/01/</loc>
-     <lastmod>2019-05-22</lastmod>
+     <lastmod>2019-05-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -21,18 +31,23 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://shumez.github.io/CollaborativeStatistics/</loc>
+     <lastmod>2019-05-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://shumez.github.io/Statistics4e/</loc>
-     <lastmod>2019-05-22</lastmod>
+     <lastmod>2019-05-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://shumez.github.io/StatisticalModelsTheoryAndPractice/</loc>
-     <lastmod>2019-05-22</lastmod>
+     <lastmod>2019-05-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://shumez.github.io/StatisticalModelsTheoryAndPractice/01/</loc>
-     <lastmod>2019-05-22</lastmod>
+     <lastmod>2019-05-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
