@@ -1,13 +1,19 @@
 # code
 
+library(ggplot2)
+library(GGally)
+install.packages('matrixStats')
+library('matrixStats')
+install.packages("corrplot")
+library(corrplot)#, method="ellipse")
+
 setwd('~/Developer/stat/PracticalStatisticsForDataScientists/01/')
 dir_data = '~/Developer/stat/PracticalStatisticsForDataScientists/data/'
 
 state <- read.csv(file = file.path(dir_data, 'state.csv'))
 View(state)
 
-library(ggplot2)
-library(GGally)
+
 
 dat_state = data.frame(Population = state$Population, MurderRate=state$Murder.Rate, row.names = state$State)
 View(dat_state)
@@ -21,8 +27,7 @@ mean(state$Population, trim = .1)
 median(state$Population)
 weighted.mean(state$Murder.Rate, w = state$Population)
 
-install.packages('matrixStats')
-library('matrixStats')
+
 weightedMedian(state$Murder.Rate, w = state$Population)
 
 # 01.04.
@@ -38,7 +43,7 @@ boxplot(state$Population/1000000, ylab='Population (millions)')
 
 p <- ggplot(state, aes(Population)) 
 p <- p + geom_boxplot(aes(ymin=min(state$Population), lower=quantile(state$Population, .25), middle=median(state$Population), upper=quantile(state$Population, .75), ymax=max(state$Population)), stat='identity')
-
+p
 
 breaks <- seq(from=min(state$Population), to=max(state$Population), length=11)
 pop_freq <- cut(state$Population, breaks=breaks, right=TRUE, include.lowest=TRUE)
@@ -71,8 +76,7 @@ etfs = sp500_px[row.names(sp500_px) > "2012-07-01",
                 sp500_sym[sp500_sym$sector=="etf", 'symbol']]
 View(etfs)
 
-install.packages("corrplot")
-library(corrplot)#, method="ellipse")
+
 corrplot(cor(etfs))
 p <- ggcorr(etfs, palette='Viridis') + scale_colour_viridis_c()
 p
@@ -90,6 +94,19 @@ p <- ggplot(house0, aes(SqFtTotLiving, TaxAssessedValue)) + stat_binhex(colour='
 p <- p + theme_bw() + scale_fill_gradient(limits=c(0, 9000), low = 'white', high = 'blue')# + labs(x=)
 p
 
+
+airline_stats = read.csv(file.path(dir_data, 'airline_stats.csv'))
+airline_stats$pct_delay = airline_stats$pct_atc_delay + airline_stats$pct_carrier_delay + airline_stats$pct_weather_delay
+View(airline_stats)
+boxplot(pct_carrier_delay ~ airline, data=airline_stats, ylim=c(0, 30), ylab='Percent of airline delays by carrier', title='Percent of airline delays by carrier')
+
+p <- ggplot(airline_stats, aes(airline, pct_carrier_delay)) + 
+  geom_violin(draw_quantiles = c(.25, .5, .75), fill='lightblue') +
+  # geom_boxplot(alpha=.2) +
+  # geom_jitter(height = 0, width = .1, alpha=.1)
+  ylim(0, 30) +
+  ylab('Percent Delayed')
+p
 
 
 
