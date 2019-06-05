@@ -3,7 +3,7 @@ Filename: 	index.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-05-25 12:40:11
+Modified: 	2019-06-05 15:43:27
 -----
 Copyright (c) 2019 shumez
 -->
@@ -40,6 +40,11 @@ Copyright (c) 2019 shumez
     * [01.07.01. Scatterplots][010701]
 * [01.08. Exploring Two or More Variables][0108]
     * [01.08.01. Hexagonal Binning and Contours (plotting numeric vs. numeric)][010801]
+    * [01.08.02. Two Categorical Variables][010802]
+    * [01.08.03. Categorical and Numerical Data][010803]
+    * [01.08.04. Visualizing Multiple Variables][010804]
+    * [01.08.05. Further Reading][010805]
+    * [01.09. Conclusion][0109]
 * [01.09. Conclusion][0109]
 
 
@@ -274,6 +279,24 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 ### 01.08.01. Hexagonal Binning and Contours (plotting numeric vs. numeric)
 
 
+### 01.08.02. Two Categorical Variables
+
+
+### 01.08.03. Categorical and Numerical Data
+
+[![Fig.1.10][fig0110]][fig0110]
+
+
+[![Fig.1.11][fig0111]][fig0111]
+
+### 01.08.04. Visualizing Multiple Variables
+
+
+### 01.08.05. Further Reading
+
+## 01.09. Conclusion
+
+
 
 
 ##
@@ -306,6 +329,10 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 [010701]: #010701_scatterplots
 [0108]: #0108_exploring_two_or_more_variables
 [010801]: #010801_hexagonal_binning_and_contours_plotting_numeric_vs_numeric
+[010802]: #010802_two_categorical_variables
+[010803]: #010803_categorical_and_numerical_data
+[010804]: #010804_visualizing_multiple_variables
+[010805]: #010805_further_reading
 [0109]: #0109_conclusion
 
 <!-- ref -->
@@ -318,6 +345,8 @@ lines(density(state$Murder.Rate), lwd=3, col='blue')
 [fig0103]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0103.png
 [fig0104]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0104.png
 [fig0107]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0107.png
+[fig0110]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0110.png
+[fig0111]: https://raw.githubusercontent.com/shumez/stat/master/PracticalStatisticsForDataScientists/01/fig/0111.png
 
 
 <style type="text/css">
