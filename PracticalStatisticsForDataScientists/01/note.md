@@ -1,16 +1,16 @@
 <!--
-Filename: 	index.md
+Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/PracticalStatisticsForDataScientists/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-19 13:17:3
-Modified: 	2019-06-05 15:43:27
+Modified: 	2019-06-12 14:44:52
 -----
 Copyright (c) 2019 shumez
 -->
 
 # 01. Exploratory Data Analysis
 
-## ToC
+## Contents
 
 * [01.01. Elements of Structured Data][0101]
     * [01.01.01. Further Reading][010101]
