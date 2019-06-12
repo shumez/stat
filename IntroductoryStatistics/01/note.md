@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/IntroductoryStatistics/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-25 13:21:6
-Modified: 	2019-06-12 16:27:6
+Modified: 	2019-06-12 16:54:22
 -----
 Copyright (c) 2019 shumez
 -->
@@ -156,6 +156,8 @@ Copyright (c) 2019 shumez
 
 
 ### 01.03.03. Frequency
+
+
 
 
 ##
