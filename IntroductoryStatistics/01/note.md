@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/IntroductoryStatistics/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-25 13:21:6
-Modified: 	2019-06-12 16:25:41
+Modified: 	2019-06-12 16:27:6
 -----
 Copyright (c) 2019 shumez
 -->
@@ -39,6 +39,7 @@ Copyright (c) 2019 shumez
 * [01.03. Frequency, Frequency Tables, and Levels of Measurement][0103]
     * [01.03.01. Answers and Rounding Off][010301]
     * [01.03.02. Levels of Measurement][010302]
+    * [01.03.03. Frequency][010303]
 
 
 ## 01.01. Definitions of Statistics, Probability, and Key Terms
@@ -154,6 +155,8 @@ Copyright (c) 2019 shumez
 * **Ratio scale level**: has starting point
 
 
+### 01.03.03. Frequency
+
 
 ##
 [01]: https://cnx.org/contents/MBiUQmmY@23.30:2T34_25K@14/Introduction
@@ -187,6 +190,7 @@ Copyright (c) 2019 shumez
 [0103]: #0103_frequency_frequency_tables_and_levels_of_measurement
 [010301]: #010301_answers_and_rounding_off
 [010302]: #010302_levels_of_measurement
+[010303]: #010303_frequency
 
 <!-- ref -->
 
