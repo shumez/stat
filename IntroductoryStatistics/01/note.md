@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/IntroductoryStatistics/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-25 13:21:6
-Modified: 	2019-06-12 15:52:8
+Modified: 	2019-06-12 16:00:47
 -----
 Copyright (c) 2019 shumez
 -->
@@ -34,6 +34,8 @@ Copyright (c) 2019 shumez
     * [Example 01.12][ex0112]
     * [Example 01.13][ex0113]
     * [01.02.03. Variation in Data][010203]
+    * [01.02.04. Variation in Samples][010204]
+        * [01.02.04.01. Size of a Sample][01020401]
 
 
 ## 01.01. Definitions of Statistics, Probability, and Key Terms
@@ -132,6 +134,10 @@ Copyright (c) 2019 shumez
 **variation**
 
 
+### 01.02.04. Variation in Samples
+
+#### 01.02.04.01. Size of a Sample
+
 ##
 [01]: https://cnx.org/contents/MBiUQmmY@23.30:2T34_25K@14/Introduction
 [0101]: #0101_definitions_of_statistics_probability_and_key_terms
@@ -156,6 +162,8 @@ Copyright (c) 2019 shumez
 [ex0112]: #example_0112
 [ex0113]: #example_0113
 [010203]: #010203_variation_in_data
+[010204]: #010204_variation_in_samples
+[01020401]: #01020401_size_of_a_sample
 
 <!-- ref -->
 
