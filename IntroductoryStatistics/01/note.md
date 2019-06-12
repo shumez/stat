@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/IntroductoryStatistics/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-25 13:21:6
-Modified: 	2019-06-12 16:00:47
+Modified: 	2019-06-12 16:10:41
 -----
 Copyright (c) 2019 shumez
 -->
@@ -36,6 +36,8 @@ Copyright (c) 2019 shumez
     * [01.02.03. Variation in Data][010203]
     * [01.02.04. Variation in Samples][010204]
         * [01.02.04.01. Size of a Sample][01020401]
+* [01.03. Frequency, Frequency Tables, and Levels of Measurement][0103]
+    * [01.03.01. Answers and Rounding Off][010301]
 
 
 ## 01.01. Definitions of Statistics, Probability, and Key Terms
@@ -138,8 +140,18 @@ Copyright (c) 2019 shumez
 
 #### 01.02.04.01. Size of a Sample
 
+
+## 01.03. Frequency, Frequency Tables, and Levels of Measurement
+
+### 01.03.01. Answers and Rounding Off
+
+
+
+
+
 ##
 [01]: https://cnx.org/contents/MBiUQmmY@23.30:2T34_25K@14/Introduction
+
 [0101]: #0101_definitions_of_statistics_probability_and_key_terms
 [Collaborative Exercise]: #collaborative_exercise
 [010101]: #010101_probability
@@ -148,6 +160,7 @@ Copyright (c) 2019 shumez
 [ex0102]: #example_0102
 [ex0103]: #example_0103
 [ex0104]: #example_0104
+
 [0102]: #0102_data_sampling_and_variation_in_data_and_sampling
 [ex0105]: #example_0105
 [ex0106]: #example_0106
@@ -164,6 +177,9 @@ Copyright (c) 2019 shumez
 [010203]: #010203_variation_in_data
 [010204]: #010204_variation_in_samples
 [01020401]: #01020401_size_of_a_sample
+
+[0103]: #0103_frequency_frequency_tables_and_levels_of_measurement
+[010301]: #010301_answers_and_rounding_off
 
 <!-- ref -->
 
