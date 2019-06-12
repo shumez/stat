@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/IntroductoryStatistics/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-25 13:21:6
-Modified: 	2019-06-12 14:58:52
+Modified: 	2019-06-12 15:38:58
 -----
 Copyright (c) 2019 shumez
 -->
@@ -28,6 +28,8 @@ Copyright (c) 2019 shumez
     * [Example 01.09][ex0109]
     * [Example 01.10][ex0110]
     * [01.02.01. Qualitative Data Discussion][010201]
+    * [01.02.02. Sampling][010202]
+        * [01.02.02.01. Critical Evaluation][01020201]
 
 
 ## 01.01. Definitions of Statistics, Probability, and Key Terms
@@ -92,7 +94,28 @@ Copyright (c) 2019 shumez
 
 [![Fig.1.6][fig0106]][fig0106]
 
+### 01.02.02. Sampling
 
+* **random sampling**
+    * **simple random sample**
+    * **stratified sample**
+    * **cluster sample**
+    * **systematic sample**
+
+**stratified sample**
+
+**cluster sample**
+
+**systematic sample**
+
+
+**convince sampling**: non-random sampling
+
+* w/ replacement
+* w/o replacement
+
+
+#### 01.02.02.01. Critical Evaluation
 
 
 
@@ -115,6 +138,8 @@ Copyright (c) 2019 shumez
 [ex0109]: #example_0109
 [ex0110]: #example_0110
 [010201]: #010201_qualitative_data_discussion
+[010202]: #010202_sampling
+[01020201]: #01020201_critical_evaluation
 
 <!-- ref -->
 
