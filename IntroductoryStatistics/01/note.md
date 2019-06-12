@@ -1,25 +1,32 @@
 <!--
 Filename: 	note.md
-Project: 	/Users/shume/Developer/doc/proj
+Project: 	/Users/shume/Developer/stat/IntroductoryStatistics/01
 Author: 	shumez <https://github.com/shumez>
-Created: 	2019-02-22 17:48:8
-Modified: 	2019-05-25 16:39:55
+Created: 	2019-05-25 13:21:6
+Modified: 	2019-06-12 14:58:52
 -----
 Copyright (c) 2019 shumez
 -->
 
 # [01. Sampling and Data][01]
 
-## ToC
+## Contents
 
 * [01.01. Definitions of Statistics, Probability, and Key Terms][0101]
     * [Collaborative Exercise]
     * [01.01.01. Probability][010101]
     * [01.01.02. Key Terms][010102]
-    * [Example 1.1][example11]
-    * [Example 1.2][example12]
+    * [Example 01.01][ex0101]
+    * [Example 01.02][ex0102]
+    * [Example 01.03][ex0103]
+    * [Example 01.04][ex0104]
 * [01.02. Data, Sampling, and Variation in Data and Sampling][0102]
-    * [Example 1.5][example15]
+    * [Example 01.05][ex0105]
+    * [Example 01.06][ex0106]
+    * [Example 01.07][ex0107]
+    * [Example 01.08][ex0108]
+    * [Example 01.09][ex0109]
+    * [Example 01.10][ex0110]
     * [01.02.01. Qualitative Data Discussion][010201]
 
 
@@ -29,7 +36,7 @@ Copyright (c) 2019 shumez
 
 **inferential statistics**
 
-###### Collaborative Exercise
+### Collaborative Exercise
 
 [![Fig.1.2][fig0102]][fig0102]
 
@@ -52,10 +59,13 @@ Copyright (c) 2019 shumez
 
 **Proportion**
 
-###### Example 1.1
+### Example 01.01
 
-###### Example 1.2
+### Example 01.02
 
+### Example 01.03
+
+### Example 01.04
 
 ## 01.02. Data, Sampling, and Variation in Data and Sampling
 
@@ -66,17 +76,17 @@ Copyright (c) 2019 shumez
     * continuous
 
 
-###### Example 1.5
+### Example 01.05
 
-###### Example 1.6
+### Example 01.06
 
-###### Example 1.7
+### Example 01.07
 
-###### Example 1.8
+### Example 01.08
 
-###### Example 1.9
+### Example 01.09
 
-###### Example 1.10
+### Example 01.10
 
 ### 01.02.01. Qualitative Data Discussion
 
@@ -93,9 +103,17 @@ Copyright (c) 2019 shumez
 [Collaborative Exercise]: #collaborative_exercise
 [010101]: #010101_probability
 [010102]: #010102_key_terms
-[example11]: #example_11
-[example12]: #example_12
+[ex0101]: #example_0101
+[ex0102]: #example_0102
+[ex0103]: #example_0103
+[ex0104]: #example_0104
 [0102]: #0102_data_sampling_and_variation_in_data_and_sampling
+[ex0105]: #example_0105
+[ex0106]: #example_0106
+[ex0107]: #example_0107
+[ex0108]: #example_0108
+[ex0109]: #example_0109
+[ex0110]: #example_0110
 [010201]: #010201_qualitative_data_discussion
 
 <!-- ref -->
