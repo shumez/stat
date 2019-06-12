@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/IntroductoryStatistics
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-25 13:08:3
-Modified: 	2019-05-25 14:32:19
+Modified: 	2019-06-12 14:08:37
 -----
 Copyright (c) 2019 shumez
 -->
@@ -12,7 +12,7 @@ Copyright (c) 2019 shumez
 
 [![Cover][cover]][cover]
 
-## ToC
+## Contents
 
 * [01. Sampling and Data][01]
     * [01.01. Definitions of Statistics, Probability, and Key Terms][0101]
