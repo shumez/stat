@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/IntroductoryStatistics/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-05-25 13:21:6
-Modified: 	2019-06-12 15:49:58
+Modified: 	2019-06-12 15:52:8
 -----
 Copyright (c) 2019 shumez
 -->
@@ -33,6 +33,7 @@ Copyright (c) 2019 shumez
     * [Example 01.11][ex0111]
     * [Example 01.12][ex0112]
     * [Example 01.13][ex0113]
+    * [01.02.03. Variation in Data][010203]
 
 
 ## 01.01. Definitions of Statistics, Probability, and Key Terms
@@ -126,7 +127,9 @@ Copyright (c) 2019 shumez
 ### Example 01.13
 
 
+### 01.02.03. Variation in Data
 
+**variation**
 
 
 ##
@@ -152,6 +155,7 @@ Copyright (c) 2019 shumez
 [ex0111]: #example_0111
 [ex0112]: #example_0112
 [ex0113]: #example_0113
+[010203]: #010203_variation_in_data
 
 <!-- ref -->
 
