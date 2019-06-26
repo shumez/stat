@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-06-26 14:31:9
-Modified: 	2019-06-26 15:55:50
+Modified: 	2019-06-26 15:57:43
 -----
 Copyright (c) 2019 shumez
 -->
@@ -19,6 +19,7 @@ Copyright (c) 2019 shumez
 - [03. Descriptive Statistics][03]
     - [03.01. Importance of Descriptive Statistics][0301]
     - [03.02. Numerical Summary][0302]
+        - [03.02.01. Location][030201]
 
 
 ## 01. Statistics
@@ -65,6 +66,8 @@ Copyright (c) 2019 shumez
 
 ### 03.02. Numerical Summary
 
+### 03.02.01. Location
+
 - Mean 
 
 \[ \bar{x} = \frac{x_1 + \cdots x_n}{n} = \frac{1}{n}\sum_{i=1}^n{x_i} \]
@@ -89,6 +92,8 @@ Copyright (c) 2019 shumez
 k% trimmed mean: 上下k%を取り除いたあとの平均
 
 
+###
+
 
 ##
 <!-- toc -->
@@ -100,6 +105,7 @@ k% trimmed mean: 上下k%を取り除いたあとの平均
 [03]: #03_descriptive_statistics
 [0301]: #0301_importance_of_descriptive_statistics
 [0302]: #0302_numerical_summary
+[030201]: #030201_location
 
 <!-- ref -->
 
