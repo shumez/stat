@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-06-26 14:31:9
-Modified: 	2019-06-26 15:57:43
+Modified: 	2019-06-26 16:06:40
 -----
 Copyright (c) 2019 shumez
 -->
@@ -20,6 +20,7 @@ Copyright (c) 2019 shumez
     - [03.01. Importance of Descriptive Statistics][0301]
     - [03.02. Numerical Summary][0302]
         - [03.02.01. Location][030201]
+        - [03.02.02. Variance][030202]
 
 
 ## 01. Statistics
@@ -92,7 +93,24 @@ Copyright (c) 2019 shumez
 k% trimmed mean: 上下k%を取り除いたあとの平均
 
 
-###
+### 03.02.02. Variance
+
+Variability (変動), Dispersion (散らばり)
+
+- Variance, Standard deviation
+
+**Variance** (分散), **Standard deviaton** (標準偏差)
+
+\[ 
+    \begin{align*}
+        \text{Variance: } s^2 &= \frac{1}{n-1} \sum_{i=1}^n{(x_i - \bar{x})^2} \\
+        \text{Standard deviation: } s &= \sqrt{s^2} 
+    \end{align*}
+\]
+
+- Inter Quantile Range (IQR)
+
+
 
 
 ##
@@ -106,6 +124,7 @@ k% trimmed mean: 上下k%を取り除いたあとの平均
 [0301]: #0301_importance_of_descriptive_statistics
 [0302]: #0302_numerical_summary
 [030201]: #030201_location
+[030202]: #030202_variance
 
 <!-- ref -->
 
