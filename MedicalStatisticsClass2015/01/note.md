@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-06-26 14:31:9
-Modified: 	2019-06-26 15:07:2
+Modified: 	2019-06-26 15:16:50
 -----
 Copyright (c) 2019 shumez
 -->
@@ -16,6 +16,8 @@ Copyright (c) 2019 shumez
     - [01.01. Data Analysis][0101]
     - [01.02. Problem Setting & Data Analysis][0102]
 - [02. Raw data][02]
+- [03. Descriptive Statistics][03]
+    - [03.01. Importance of Descriptive Statistics][0301]
 
 
 ## 01. Statistics
@@ -51,7 +53,13 @@ Copyright (c) 2019 shumez
 ## 02. Raw Data
 
 
+## 03. Descriptive Statistics
 
+### 03.01. Importance of Descriptive Statistics
+
+- **location**
+- **variance**
+- **shape**
 
 
 ##
@@ -61,6 +69,8 @@ Copyright (c) 2019 shumez
 [0101]: #0101_overview_of_data_analysis
 [0102]: #0102_problem_setting_data_analysis
 [02]: #02_raw_data
+[03]: #03_descriptive_statistics
+[0301]: #0301_importance_of_descriptive_statistics
 
 <!-- ref -->
 
