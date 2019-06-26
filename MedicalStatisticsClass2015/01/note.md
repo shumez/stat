@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-06-26 14:31:9
-Modified: 	2019-06-26 15:16:50
+Modified: 	2019-06-26 15:55:50
 -----
 Copyright (c) 2019 shumez
 -->
@@ -18,6 +18,7 @@ Copyright (c) 2019 shumez
 - [02. Raw data][02]
 - [03. Descriptive Statistics][03]
     - [03.01. Importance of Descriptive Statistics][0301]
+    - [03.02. Numerical Summary][0302]
 
 
 ## 01. Statistics
@@ -62,6 +63,33 @@ Copyright (c) 2019 shumez
 - **shape**
 
 
+### 03.02. Numerical Summary
+
+- Mean 
+
+\[ \bar{x} = \frac{x_1 + \cdots x_n}{n} = \frac{1}{n}\sum_{i=1}^n{x_i} \]
+
+- Median
+
+\[ \tilde{x} = \begin{cases}
+    x_{ \frac{(n+1)}{2} } & n \text{ is odd} \\
+    \frac{ \Big( x_{  \frac{n}{2}  } + x_{\frac{(n+1)}{2}} \Big) }{2} & n \text{ is even}
+\end{cases} \]
+
+- Percentile
+
+**k-th percentile**
+
+- Quantile
+    - First quantile
+    - Third quantile
+  
+- Trimmed mean (刈り込み平均)
+
+k% trimmed mean: 上下k%を取り除いたあとの平均
+
+
+
 ##
 <!-- toc -->
 [01. Fundamental Statistics]: https://drive.google.com/drive/u/0/folders/0B-_Hpdri56S1bUJsZGcxX1RJS1E
@@ -71,6 +99,7 @@ Copyright (c) 2019 shumez
 [02]: #02_raw_data
 [03]: #03_descriptive_statistics
 [0301]: #0301_importance_of_descriptive_statistics
+[0302]: #0302_numerical_summary
 
 <!-- ref -->
 
