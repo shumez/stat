@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-06-26 14:31:9
-Modified: 	2019-06-26 16:06:40
+Modified: 	2019-06-26 16:23:32
 -----
 Copyright (c) 2019 shumez
 -->
@@ -109,6 +109,21 @@ Variability (変動), Dispersion (散らばり)
 \]
 
 - Inter Quantile Range (IQR)
+
+\[ f_s = \text{75-th percentile} - \text{25-th percentile} \]
+
+
+standard error (標準誤差):　Standard error of mean (標本平均の標準偏差)
+
+\[ \text{Standard error: } \frac{s}{\sqrt{n}} \]
+
+- Mean ± SD  
+    - 平均分布に従うならば, Mean ± SDの範囲にデータの60-70%が分布している
+    - 観測データの散らばりを意味する
+- Mean ± SE
+    - Mean± SEの範囲に, 標本平均の60-70%が分布している
+    - SEは標本平均による母集団平均お推定の正確さを意味する
+
 
 
 
