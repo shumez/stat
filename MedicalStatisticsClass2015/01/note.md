@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-06-26 14:31:9
-Modified: 	2019-06-26 15:05:42
+Modified: 	2019-06-26 15:07:2
 -----
 Copyright (c) 2019 shumez
 -->
@@ -15,6 +15,7 @@ Copyright (c) 2019 shumez
 - [01. Statistics][01]
     - [01.01. Data Analysis][0101]
     - [01.02. Problem Setting & Data Analysis][0102]
+- [02. Raw data][02]
 
 
 ## 01. Statistics
@@ -47,6 +48,11 @@ Copyright (c) 2019 shumez
 - Statistic (統計量)
 
 
+## 02. Raw Data
+
+
+
+
 
 ##
 <!-- toc -->
@@ -54,6 +60,7 @@ Copyright (c) 2019 shumez
 [01]: #01_statistics
 [0101]: #0101_overview_of_data_analysis
 [0102]: #0102_problem_setting_data_analysis
+[02]: #02_raw_data
 
 <!-- ref -->
 
