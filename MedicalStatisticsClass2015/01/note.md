@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-06-26 14:31:9
-Modified: 	2019-06-26 14:54:25
+Modified: 	2019-06-26 15:04:44
 -----
 Copyright (c) 2019 shumez
 -->
@@ -32,6 +32,19 @@ Copyright (c) 2019 shumez
 6. Model diagnositics
 7. Decision & Report
 
+
+### 01.02. Problem Setting & Data Analysis
+
+1. Population (母集団)  
+    : 解析対象となる個体の集合
+2. Parameter  
+    : population を特徴づける定数
+3. Sample (標本)
+4. Sampling frame  
+    : sample として抽出されうる個体の集合
+5. Variable  
+    : 母集団において, 個体間で確率的に異なりうる特性, 量
+6. Statistic (統計量)
 
 
 
