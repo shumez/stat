@@ -66,7 +66,7 @@
     <a class="current" href="./">01. Sampling and Data</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#toc">ToC</a></li>
+    <li class="toctree-l3"><a href="#contents">Contents</a></li>
     
 
     <li class="toctree-l3"><a href="#0101_definitions_of_statistics_probability_and_key_terms">01.01. Definitions of Statistics, Probability, and Key Terms</a></li>
@@ -79,6 +79,14 @@
         
             <li><a class="toctree-l4" href="#010102_key_terms">01.01.02. Key Terms</a></li>
         
+            <li><a class="toctree-l4" href="#example_0101">Example 01.01</a></li>
+        
+            <li><a class="toctree-l4" href="#example_0102">Example 01.02</a></li>
+        
+            <li><a class="toctree-l4" href="#example_0103">Example 01.03</a></li>
+        
+            <li><a class="toctree-l4" href="#example_0104">Example 01.04</a></li>
+        
         </ul>
     
 
@@ -86,24 +94,64 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#example_15">Example 1.5</a></li>
+            <li><a class="toctree-l4" href="#example_0105">Example 01.05</a></li>
         
-            <li><a class="toctree-l4" href="#example_16">Example 1.6</a></li>
+            <li><a class="toctree-l4" href="#example_0106">Example 01.06</a></li>
         
-            <li><a class="toctree-l4" href="#example_17">Example 1.7</a></li>
+            <li><a class="toctree-l4" href="#example_0107">Example 01.07</a></li>
         
-            <li><a class="toctree-l4" href="#example_18">Example 1.8</a></li>
+            <li><a class="toctree-l4" href="#example_0108">Example 01.08</a></li>
         
-            <li><a class="toctree-l4" href="#example_19">Example 1.9</a></li>
+            <li><a class="toctree-l4" href="#example_0109">Example 01.09</a></li>
         
-            <li><a class="toctree-l4" href="#example_110">Example 1.10</a></li>
+            <li><a class="toctree-l4" href="#example_0110">Example 01.10</a></li>
         
             <li><a class="toctree-l4" href="#010201_qualitative_data_discussion">01.02.01. Qualitative Data Discussion</a></li>
+        
+            <li><a class="toctree-l4" href="#010202_sampling">01.02.02. Sampling</a></li>
+        
+            <li><a class="toctree-l4" href="#example_0111">Example 01.11</a></li>
+        
+            <li><a class="toctree-l4" href="#example_0112">Example 01.12</a></li>
+        
+            <li><a class="toctree-l4" href="#example_0113">Example 01.13</a></li>
+        
+            <li><a class="toctree-l4" href="#010203_variation_in_data">01.02.03. Variation in Data</a></li>
+        
+            <li><a class="toctree-l4" href="#010204_variation_in_samples">01.02.04. Variation in Samples</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#0103_frequency_frequency_tables_and_levels_of_measurement">01.03. Frequency, Frequency Tables, and Levels of Measurement</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#010301_answers_and_rounding_off">01.03.01. Answers and Rounding Off</a></li>
+        
+            <li><a class="toctree-l4" href="#010302_levels_of_measurement">01.03.02. Levels of Measurement</a></li>
+        
+            <li><a class="toctree-l4" href="#010303_frequency">01.03.03. Frequency</a></li>
         
         </ul>
     
 
     </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Medical Statitics Class 2015</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../MedicalStatisticsClass2015/">Intro</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../MedicalStatisticsClass2015/01/">01. Fundamental Statistics</a>
                 </li>
     </ul>
 	    </li>
@@ -122,7 +170,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../PracticalStatisticsForDataScientists/02/index.md">02. Data and Sampling Distributions</a>
+    <a class="" href="../../PracticalStatisticsForDataScientists/02/">02. Data and Sampling Distributions</a>
                 </li>
     </ul>
 	    </li>
@@ -202,35 +250,60 @@
               
                 <!--
 Filename:   note.md
-Project:    /Users/shume/Developer/doc/proj
+Project:    /Users/shume/Developer/stat/IntroductoryStatistics/01
 Author:     shumez <https://github.com/shumez>
-Created:    2019-02-22 17:48:8
-Modified:   2019-05-25 16:39:55
+Created:    2019-05-25 13:21:6
+Modified:   2019-06-12 16:54:22
 -----
 Copyright (c) 2019 shumez
 -->
 
 <h1 id="01_sampling_and_data"><a href="https://cnx.org/contents/MBiUQmmY@23.30:2T34_25K@14/Introduction">01. Sampling and Data</a><a class="headerlink" href="#01_sampling_and_data" title="Permanent link">&para;</a></h1>
-<h2 id="toc">ToC<a class="headerlink" href="#toc" title="Permanent link">&para;</a></h2>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="#0101_definitions_of_statistics_probability_and_key_terms">01.01. Definitions of Statistics, Probability, and Key Terms</a><ul>
 <li><a href="#collaborative_exercise">Collaborative Exercise</a></li>
 <li><a href="#010101_probability">01.01.01. Probability</a></li>
 <li><a href="#010102_key_terms">01.01.02. Key Terms</a></li>
-<li><a href="#example_11">Example 1.1</a></li>
-<li><a href="#example_12">Example 1.2</a></li>
+<li><a href="#example_0101">Example 01.01</a></li>
+<li><a href="#example_0102">Example 01.02</a></li>
+<li><a href="#example_0103">Example 01.03</a></li>
+<li><a href="#example_0104">Example 01.04</a></li>
 </ul>
 </li>
 <li><a href="#0102_data_sampling_and_variation_in_data_and_sampling">01.02. Data, Sampling, and Variation in Data and Sampling</a><ul>
-<li>[Example 1.5][example15]</li>
+<li><a href="#example_0105">Example 01.05</a></li>
+<li><a href="#example_0106">Example 01.06</a></li>
+<li><a href="#example_0107">Example 01.07</a></li>
+<li><a href="#example_0108">Example 01.08</a></li>
+<li><a href="#example_0109">Example 01.09</a></li>
+<li><a href="#example_0110">Example 01.10</a></li>
 <li><a href="#010201_qualitative_data_discussion">01.02.01. Qualitative Data Discussion</a></li>
+<li><a href="#010202_sampling">01.02.02. Sampling</a><ul>
+<li><a href="#01020201_critical_evaluation">01.02.02.01. Critical Evaluation</a></li>
+</ul>
+</li>
+<li><a href="#example_0111">Example 01.11</a></li>
+<li><a href="#example_0112">Example 01.12</a></li>
+<li><a href="#example_0113">Example 01.13</a></li>
+<li><a href="#010203_variation_in_data">01.02.03. Variation in Data</a></li>
+<li><a href="#010204_variation_in_samples">01.02.04. Variation in Samples</a><ul>
+<li><a href="#01020401_size_of_a_sample">01.02.04.01. Size of a Sample</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#0103_frequency_frequency_tables_and_levels_of_measurement">01.03. Frequency, Frequency Tables, and Levels of Measurement</a><ul>
+<li><a href="#010301_answers_and_rounding_off">01.03.01. Answers and Rounding Off</a></li>
+<li><a href="#010302_levels_of_measurement">01.03.02. Levels of Measurement</a></li>
+<li><a href="#010303_frequency">01.03.03. Frequency</a></li>
 </ul>
 </li>
 </ul>
 <h2 id="0101_definitions_of_statistics_probability_and_key_terms">01.01. Definitions of Statistics, Probability, and Key Terms<a class="headerlink" href="#0101_definitions_of_statistics_probability_and_key_terms" title="Permanent link">&para;</a></h2>
 <p><strong>descriptive statistics</strong></p>
 <p><strong>inferential statistics</strong></p>
-<h6 id="collaborative_exercise">Collaborative Exercise<a class="headerlink" href="#collaborative_exercise" title="Permanent link">&para;</a></h6>
+<h3 id="collaborative_exercise">Collaborative Exercise<a class="headerlink" href="#collaborative_exercise" title="Permanent link">&para;</a></h3>
 <p><a href="https://raw.githubusercontent.com/shumez/stat/master/IntroductoryStatistics/01/fig/0102.png"><img alt="Fig.1.2" src="https://raw.githubusercontent.com/shumez/stat/master/IntroductoryStatistics/01/fig/0102.png" /></a></p>
 <h3 id="010101_probability">01.01.01. Probability<a class="headerlink" href="#010101_probability" title="Permanent link">&para;</a></h3>
 <p><strong>Probability</strong></p>
@@ -241,8 +314,10 @@ Copyright (c) 2019 shumez
 <p><strong>Sampling</strong></p>
 <p><strong>Mean</strong></p>
 <p><strong>Proportion</strong></p>
-<h6 id="example_11">Example 1.1<a class="headerlink" href="#example_11" title="Permanent link">&para;</a></h6>
-<h6 id="example_12">Example 1.2<a class="headerlink" href="#example_12" title="Permanent link">&para;</a></h6>
+<h3 id="example_0101">Example 01.01<a class="headerlink" href="#example_0101" title="Permanent link">&para;</a></h3>
+<h3 id="example_0102">Example 01.02<a class="headerlink" href="#example_0102" title="Permanent link">&para;</a></h3>
+<h3 id="example_0103">Example 01.03<a class="headerlink" href="#example_0103" title="Permanent link">&para;</a></h3>
+<h3 id="example_0104">Example 01.04<a class="headerlink" href="#example_0104" title="Permanent link">&para;</a></h3>
 <h2 id="0102_data_sampling_and_variation_in_data_and_sampling">01.02. Data, Sampling, and Variation in Data and Sampling<a class="headerlink" href="#0102_data_sampling_and_variation_in_data_and_sampling" title="Permanent link">&para;</a></h2>
 <ul>
 <li>qualitative<ul>
@@ -255,14 +330,50 @@ Copyright (c) 2019 shumez
 </ul>
 </li>
 </ul>
-<h6 id="example_15">Example 1.5<a class="headerlink" href="#example_15" title="Permanent link">&para;</a></h6>
-<h6 id="example_16">Example 1.6<a class="headerlink" href="#example_16" title="Permanent link">&para;</a></h6>
-<h6 id="example_17">Example 1.7<a class="headerlink" href="#example_17" title="Permanent link">&para;</a></h6>
-<h6 id="example_18">Example 1.8<a class="headerlink" href="#example_18" title="Permanent link">&para;</a></h6>
-<h6 id="example_19">Example 1.9<a class="headerlink" href="#example_19" title="Permanent link">&para;</a></h6>
-<h6 id="example_110">Example 1.10<a class="headerlink" href="#example_110" title="Permanent link">&para;</a></h6>
+<h3 id="example_0105">Example 01.05<a class="headerlink" href="#example_0105" title="Permanent link">&para;</a></h3>
+<h3 id="example_0106">Example 01.06<a class="headerlink" href="#example_0106" title="Permanent link">&para;</a></h3>
+<h3 id="example_0107">Example 01.07<a class="headerlink" href="#example_0107" title="Permanent link">&para;</a></h3>
+<h3 id="example_0108">Example 01.08<a class="headerlink" href="#example_0108" title="Permanent link">&para;</a></h3>
+<h3 id="example_0109">Example 01.09<a class="headerlink" href="#example_0109" title="Permanent link">&para;</a></h3>
+<h3 id="example_0110">Example 01.10<a class="headerlink" href="#example_0110" title="Permanent link">&para;</a></h3>
 <h3 id="010201_qualitative_data_discussion">01.02.01. Qualitative Data Discussion<a class="headerlink" href="#010201_qualitative_data_discussion" title="Permanent link">&para;</a></h3>
 <p><a href="https://raw.githubusercontent.com/shumez/stat/master/IntroductoryStatistics/01/fig/0106.png"><img alt="Fig.1.6" src="https://raw.githubusercontent.com/shumez/stat/master/IntroductoryStatistics/01/fig/0106.png" /></a></p>
+<h3 id="010202_sampling">01.02.02. Sampling<a class="headerlink" href="#010202_sampling" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>random sampling</strong><ul>
+<li><strong>simple random sample</strong></li>
+<li><strong>stratified sample</strong></li>
+<li><strong>cluster sample</strong></li>
+<li><strong>systematic sample</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>stratified sample</strong></p>
+<p><strong>cluster sample</strong></p>
+<p><strong>systematic sample</strong></p>
+<p><strong>convince sampling</strong>: non-random sampling</p>
+<ul>
+<li>w/ replacement</li>
+<li>w/o replacement</li>
+</ul>
+<h4 id="01020201_critical_evaluation">01.02.02.01. Critical Evaluation<a class="headerlink" href="#01020201_critical_evaluation" title="Permanent link">&para;</a></h4>
+<h3 id="example_0111">Example 01.11<a class="headerlink" href="#example_0111" title="Permanent link">&para;</a></h3>
+<h3 id="example_0112">Example 01.12<a class="headerlink" href="#example_0112" title="Permanent link">&para;</a></h3>
+<h3 id="example_0113">Example 01.13<a class="headerlink" href="#example_0113" title="Permanent link">&para;</a></h3>
+<h3 id="010203_variation_in_data">01.02.03. Variation in Data<a class="headerlink" href="#010203_variation_in_data" title="Permanent link">&para;</a></h3>
+<p><strong>variation</strong></p>
+<h3 id="010204_variation_in_samples">01.02.04. Variation in Samples<a class="headerlink" href="#010204_variation_in_samples" title="Permanent link">&para;</a></h3>
+<h4 id="01020401_size_of_a_sample">01.02.04.01. Size of a Sample<a class="headerlink" href="#01020401_size_of_a_sample" title="Permanent link">&para;</a></h4>
+<h2 id="0103_frequency_frequency_tables_and_levels_of_measurement">01.03. Frequency, Frequency Tables, and Levels of Measurement<a class="headerlink" href="#0103_frequency_frequency_tables_and_levels_of_measurement" title="Permanent link">&para;</a></h2>
+<h3 id="010301_answers_and_rounding_off">01.03.01. Answers and Rounding Off<a class="headerlink" href="#010301_answers_and_rounding_off" title="Permanent link">&para;</a></h3>
+<h3 id="010302_levels_of_measurement">01.03.02. Levels of Measurement<a class="headerlink" href="#010302_levels_of_measurement" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Nominal scale level</strong>: qualitative (categorial)</li>
+<li><strong>Ordinal scale level</strong>: ordering</li>
+<li><strong>Interval scale level</strong>: ordering, diff between data, NOT starting point</li>
+<li><strong>Ratio scale level</strong>: has starting point</li>
+</ul>
+<h3 id="010303_frequency">01.03.03. Frequency<a class="headerlink" href="#010303_frequency" title="Permanent link">&para;</a></h3>
 <h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <!-- ref -->
 
@@ -278,7 +389,7 @@ Copyright (c) 2019 shumez
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../PracticalStatisticsForDataScientists/" class="btn btn-neutral float-right" title="Intro">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../MedicalStatisticsClass2015/" class="btn btn-neutral float-right" title="Intro">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../" class="btn btn-neutral" title="Intro"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -313,7 +424,7 @@ Copyright (c) 2019 shumez
         <span><a href="../" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../PracticalStatisticsForDataScientists/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../MedicalStatisticsClass2015/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

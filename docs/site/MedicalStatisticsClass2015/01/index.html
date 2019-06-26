@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>01. Observational Studies and Experiments - Stat</title>
+  <title>01. Fundamental Statistics - Stat</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "01. Observational Studies and Experiments";
-    var mkdocs_page_input_path = "StatisticalModelsTheoryAndPractice/01/index.md";
-    var mkdocs_page_url = "/StatisticalModelsTheoryAndPractice/01/";
+    var mkdocs_page_name = "01. Fundamental Statistics";
+    var mkdocs_page_input_path = "MedicalStatisticsClass2015/01/index.md";
+    var mkdocs_page_url = "/MedicalStatisticsClass2015/01/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
@@ -74,11 +74,42 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../MedicalStatisticsClass2015/">Intro</a>
+    <a class="" href="../">Intro</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../../MedicalStatisticsClass2015/01/">01. Fundamental Statistics</a>
+    <a class="current" href="./">01. Fundamental Statistics</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#contents">Contents</a></li>
+    
+
+    <li class="toctree-l3"><a href="#01_statistics">01. Statistics</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#0101_overview_of_data_analysis">01.01. Overview of Data Analysis</a></li>
+        
+            <li><a class="toctree-l4" href="#0102_problem_setting_data_analysis">01.02. Problem Setting &amp; Data Analysis</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#02_raw_data">02. Raw Data</a></li>
+    
+
+    <li class="toctree-l3"><a href="#03_descriptive_statistics">03. Descriptive Statistics</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#0301_importance_of_descriptive_statistics">03.01. Importance of Descriptive Statistics</a></li>
+        
+            <li><a class="toctree-l4" href="#0302_numerical_summary">03.02. Numerical Summary</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -130,29 +161,11 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../">Intro</a>
+    <a class="" href="../../StatisticalModelsTheoryAndPractice/">Intro</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">01. Observational Studies and Experiments</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#toc">ToC</a></li>
-    
-
-    <li class="toctree-l3"><a href="#0101_introduction">01.01. Introduction</a></li>
-    
-
-    <li class="toctree-l3"><a href="#0102_the_hip_trial">01.02. The HIP trial</a></li>
-    
-
-    <li class="toctree-l3"><a href="#0103_snow_on_cholera">01.03. Snow on cholera</a></li>
-    
-
-    <li class="toctree-l3"><a href="#0104_yule_on_the_causes_of_poverty">01.04. Yule on the causes of poverty</a></li>
-    
-
-    </ul>
+    <a class="" href="../../StatisticalModelsTheoryAndPractice/01/">01. Observational Studies and Experiments</a>
                 </li>
     </ul>
 	    </li>
@@ -179,11 +192,11 @@
     
       
         
-          <li>Statistical Models: Theory and Practice &raquo;</li>
+          <li>Medical Statitics Class 2015 &raquo;</li>
         
       
     
-    <li>01. Observational Studies and Experiments</li>
+    <li>01. Fundamental Statistics</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -195,116 +208,83 @@
               
                 <!--
 Filename:   note.md
-Project:    /Users/shume/Developer/stat/StatisticalModelsTheoryAndPractice/01
+Project:    /Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 Author:     shumez <https://github.com/shumez>
-Created:    2019-05-18 15:13:3
-Modified:   2019-05-19 12:26:42
+Created:    2019-06-26 14:31:9
+Modified:   2019-06-26 15:26:7
 -----
 Copyright (c) 2019 shumez
 -->
 
-<h1 id="01_observational_studies_and_experiments">01. Observational Studies and Experiments<a class="headerlink" href="#01_observational_studies_and_experiments" title="Permanent link">&para;</a></h1>
-<h2 id="toc">ToC<a class="headerlink" href="#toc" title="Permanent link">&para;</a></h2>
+<h1 id="01_fundamental_statistics"><a href="https://drive.google.com/drive/u/0/folders/0B-_Hpdri56S1bUJsZGcxX1RJS1E">01. Fundamental Statistics</a><a class="headerlink" href="#01_fundamental_statistics" title="Permanent link">&para;</a></h1>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="#0101_introduction">01.01. Introduction</a></li>
-<li><a href="#0102_the_hip_trial">01.02. The HIP trial</a></li>
-<li><a href="#0103_snow_on_cholera">01.03. Snow on cholera</a></li>
-<li><a href="#0104_yule_on_the_causes_of_poverty">01.04. Yule on the causes of poverty</a></li>
+<li><a href="#01_statistics">01. Statistics</a><ul>
+<li><a href="#0101_overview_of_data_analysis">01.01. Data Analysis</a></li>
+<li><a href="#0102_problem_setting_data_analysis">01.02. Problem Setting &amp; Data Analysis</a></li>
 </ul>
-<h2 id="0101_introduction">01.01. Introduction<a class="headerlink" href="#0101_introduction" title="Permanent link">&para;</a></h2>
-<p>regressin models used for</p>
+</li>
+<li><a href="#02_raw_data">02. Raw data</a></li>
+<li><a href="#03_descriptive_statistics">03. Descriptive Statistics</a><ul>
+<li><a href="#0301_importance_of_descriptive_statistics">03.01. Importance of Descriptive Statistics</a></li>
+<li><a href="#0302_numerical_summary">03.02. Numerical Summary</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="01_statistics">01. Statistics<a class="headerlink" href="#01_statistics" title="Permanent link">&para;</a></h2>
+<h3 id="0101_overview_of_data_analysis">01.01. Overview of Data Analysis<a class="headerlink" href="#0101_overview_of_data_analysis" title="Permanent link">&para;</a></h3>
 <ol>
-<li>to summarize data</li>
-<li>to predict future</li>
-<li>to predict the secults of interventions (caisal inferece)</li>
+<li>問題設定</li>
+<li>データの収集</li>
+<li>データの要約<ul>
+<li>Descriptive statistics<ul>
+<li>Numerical summary (数量的要約)</li>
+<li>Graphical summary (視覚的要約)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>解析手法の選択</li>
+<li>Model building</li>
+<li>Model diagnositics</li>
+<li>Decision &amp; Report</li>
 </ol>
-<p>the key problem:<br />
-<strong>confounding</strong></p>
-<p>handled by </p>
+<h3 id="0102_problem_setting_data_analysis">01.02. Problem Setting &amp; Data Analysis<a class="headerlink" href="#0102_problem_setting_data_analysis" title="Permanent link">&para;</a></h3>
 <ul>
-<li>subdividing the population (<strong>stratification</strong> aka <strong>cross-tabulation</strong>)</li>
-<li>modeling</li>
+<li>Population (母集団)<br />
+    解析対象となる個体の集合</li>
+<li>Parameter<br />
+    population を特徴づける定数</li>
+<li>Sample (標本)</li>
+<li>Sampling frame<br />
+    sample として抽出されうる個体の集合</li>
+<li>Variable<br />
+    母集団において, 個体間で確率的に異なりうる特性, 量</li>
+<li>Statistic (統計量)</li>
 </ul>
-<p>"control"</p>
+<h2 id="02_raw_data">02. Raw Data<a class="headerlink" href="#02_raw_data" title="Permanent link">&para;</a></h2>
+<h2 id="03_descriptive_statistics">03. Descriptive Statistics<a class="headerlink" href="#03_descriptive_statistics" title="Permanent link">&para;</a></h2>
+<h3 id="0301_importance_of_descriptive_statistics">03.01. Importance of Descriptive Statistics<a class="headerlink" href="#0301_importance_of_descriptive_statistics" title="Permanent link">&para;</a></h3>
 <ul>
-<li>control: subject NOT get treatment</li>
-<li>controlled experiment: study where the investigators decide who will be in the treatment group</li>
+<li><strong>location</strong></li>
+<li><strong>variance</strong></li>
+<li><strong>shape</strong></li>
 </ul>
-<p><strong>association</strong></p>
-<p>as we control for more var, study groups get smaller, more room for chance effects<br />
-problem w/ cross-tabulation</p>
-<p>&rArr; use stat model</p>
-<h2 id="0102_the_hip_trial">01.02. The HIP trial<a class="headerlink" href="#0102_the_hip_trial" title="Permanent link">&para;</a></h2>
-<p>Health Insurance Plan</p>
-<p>intention-to-treat analysis</p>
-<h2 id="0103_snow_on_cholera">01.03. Snow on cholera<a class="headerlink" href="#0103_snow_on_cholera" title="Permanent link">&para;</a></h2>
-<p><a href="https://en.wikipedia.org/wiki/John_Snow"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Chol_an.gif/300px-Chol_an.gif" title="outbreak map" /></a>
-<a href="https://en.wikipedia.org/wiki/John_Snow"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Choleramaplondon1866.png/300px-Choleramaplondon1866.png" title="outbreak map " /></a></p>
-<p><strong>natural experiment</strong>: observational study as if randomized by nature</p>
-<p><a href="https://en.wikipedia.org/wiki/John_Snow">John Snow</a> </p>
-<p><a href="https://en.wikipedia.org/wiki/Soho#Cholera_outbreak">Broad street pump</a> in Soho</p>
-<h2 id="0104_yule_on_the_causes_of_poverty">01.04. Yule on the causes of poverty<a class="headerlink" href="#0104_yule_on_the_causes_of_poverty" title="Permanent link">&para;</a></h2>
-<p>regression technique</p>
-<p>Legendre (1805), Gauss (1809)</p>
-<p>Yule (1899) </p>
-<p>
-<script type="math/tex; mode=display"> \Delta \text{Paup} = a + b \times \Delta\text{Out} + c \times \Delta\text{Old} + d \times \Delta\text{Pop} + \text{error} \tag{1} </script>
-</p>
-<p>
-<script type="math/tex">\Delta</script> percentaage change over time</p>
-<p>
-<script type="math/tex">\text{Paup}</script> percentage of paupers
-<script type="math/tex">\text{Out}</script> out-relief ration <script type="math/tex">\frac{N}{D}</script>
-<script type="math/tex; mode=display"> N = \text{number on welfare outside the poor-house} </script>
-<script type="math/tex; mode=display"> D = \text{number inside} </script>
-<script type="math/tex">\text{Old}</script> percentage of the population aged over 65
-<script type="math/tex">\text{Pop}</script> population</p>
-<p>
-<script type="math/tex; mode=display"> \sum{( \Delta\text{Paup} - a - b \times \Delta\text{Out} - c \times \Delta\text{Old} - d \times \Delta\text{Pop} )^2} </script>
-</p>
-<p>
-<script type="math/tex; mode=display"> \Delta \text{Paup} = 13.19 + 0.755 \Delta\text{Out} - 0.022 \Delta\text{Old} - 0.322 \Delta\text{Pop} + \text{error} \tag{2} </script>
-</p>
-<p>
-<script type="math/tex; mode=display"> \Delta \text{Paup} = 1.36 + 0.324 \Delta\text{Out} + 1.37 \Delta\text{Old} - 0.369 \Delta\text{Pop} + \text{error} \tag{3} </script>
-</p>
-<p>
-<script type="math/tex">\Delta\text{Out}</script> relatively large and pos</p>
-<p>
-<script type="math/tex; mode=display">
-    \begin{align*}
-        \Delta\text{Out} &= 5 - 100 = -95 \\
-        \Delta\text{Old} &= 104 - 100 = 4 \\
-        \Delta\text{Pop} &= 136 - 100 = 36
-    \end{align*}
-</script>
-</p>
-<p>
-<script type="math/tex">\Delta\text{Paup}</script>
-</p>
-<p>
-<script type="math/tex; mode=display"> 13.19 + 0.755 \times (-95) - 0.022 \times 4 - 0.322 \times 36 = -70 </script>
-</p>
-<p>actual val for <script type="math/tex">\Delta\text{Paup}</script>
-<script type="math/tex">-73</script>, so <script type="math/tex">\text{error}</script>
-<script type="math/tex">-3</script>
-</p>
+<h3 id="0302_numerical_summary">03.02. Numerical Summary<a class="headerlink" href="#0302_numerical_summary" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Quantitative inference</strong>:<ul>
-<li>
-<script type="math/tex">\Delta\text{Out} +1\text{percent age pts}</script> &rArr; <script type="math/tex">\Delta\text{Paup} +0.755\text{pecentage pts}</script>
-</li>
+<li>mean </li>
 </ul>
-</li>
-<li><strong>Qualitative inference</strong>:<ul>
-<li>Out-relief causes an increase in pauperism</li>
-</ul>
-</li>
-</ul>
+<p>
+<script type="math/tex; mode=display"> \bar{x} = \frac{x_1 + \cdots x_n}{n} = \frac{1}{n}\sum_{i=1}^n{x_i} </script>
+</p>
 <h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<!-- toc -->
+
 <!-- ref -->
 
 <!-- fig -->
+
+<!-- term -->
 
 <style type="text/css">
     img{width: 51%; float: right;}
@@ -315,6 +295,8 @@ problem w/ cross-tabulation</p>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../PracticalStatisticsForDataScientists/" class="btn btn-neutral float-right" title="Intro">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../" class="btn btn-neutral" title="Intro"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -348,6 +330,8 @@ problem w/ cross-tabulation</p>
       
         <span><a href="../" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../../PracticalStatisticsForDataScientists/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
