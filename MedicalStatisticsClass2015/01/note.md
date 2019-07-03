@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-06-26 14:31:9
-Modified: 	2019-07-03 15:56:56
+Modified: 	2019-07-03 16:14:55
 -----
 Copyright (c) 2019 shumez
 -->
@@ -21,7 +21,10 @@ Copyright (c) 2019 shumez
     - [03.02. Numerical Summary][0302]
         - [03.02.01. Location][030201]
         - [03.02.02. Variance][030202]
-
+    - [03.03. Graphical summary][0303]
+        - [03.03.01. Histogram][030301]
+        - [03.03.02. Box-plot][030302]
+        - [03.03.03. Histogram & Boxplot][030303]
 
 ## 01. Statistics
 
@@ -67,7 +70,7 @@ Copyright (c) 2019 shumez
 
 ### 03.02. Numerical Summary
 
-### 03.02.01. Location
+#### 03.02.01. Location
 
 - Mean 
 
@@ -93,7 +96,7 @@ Copyright (c) 2019 shumez
 k% trimmed mean: 上下k%を取り除いたあとの平均
 
 
-### 03.02.02. Variance
+#### 03.02.02. Variance
 
 Variability (変動), Dispersion (散らばり)
 
@@ -125,13 +128,13 @@ standard error (標準誤差):　Standard error of mean (標本平均の標準�
     - SEは標本平均による母集団平均お推定の正確さを意味する
 
 
-## 03.03. Graphical summary 
+### 03.03. Graphical summary 
 
 - Histogram
 - Box plot
 
 
-### 03.03.01. Histogram
+#### 03.03.01. Histogram
 
 Class/Bin (階級), 階級値
 Frequency (度数)
@@ -140,7 +143,7 @@ Sturges formula:
 \[ k \approx 1 + \log_2{n} \]
 
 
-#### 03.03.01.01. Shape
+##### 03.03.01.01. Shape
 
 - Unimodal
 - Bimodal
@@ -151,13 +154,32 @@ Sturges formula:
 - Negatively/Left skewed
 
 
-### 03.03.02. Box-plot
+#### 03.03.02. Box-plot
 
 Outlier (はずれ値)
 
 
-### 03.03.03. Histogram & Boxplot
+#### 03.03.03. Histogram & Boxplot
 
+
+## 04. Mean / Median 
+
+群間での平均値, 中央値の差
+
+
+### 04.01. Two sample test
+
+\(H_0\): \(\mu_1 = \mu_2\) 母集団平均が一定  
+\(H_1\): \(\mu_1 \neq \mu_2\) 母集団平均が異なる
+
+- Welch's t-test: 
+    - 正規分布に従う
+    - 2群の分散は等しくなくてもいい
+    - \(\text{Mean} \pm \text{SD}\) に対応
+- Mann-Whitney test, Wilcoxon's rank sum test: 
+    - 同じ形の分布に従う
+    - 等分散
+    - \(\text{Median(IQR)}\) に対応
 
 
 
@@ -168,11 +190,20 @@ Outlier (はずれ値)
 [0101]: #0101_overview_of_data_analysis
 [0102]: #0102_problem_setting_data_analysis
 [02]: #02_raw_data
+
 [03]: #03_descriptive_statistics
 [0301]: #0301_importance_of_descriptive_statistics
 [0302]: #0302_numerical_summary
 [030201]: #030201_location
 [030202]: #030202_variance
+[0303]: #0303_graphical_summary
+[030301]: #030301_histogram
+[03030101]: #03030101_shape
+[030302]: #030302_box-plot
+[030303]: #030303_histogram_boxplot
+
+[04]: #04_mean_median
+[]
 
 <!-- ref -->
 
