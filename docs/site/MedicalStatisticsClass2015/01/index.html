@@ -106,9 +106,16 @@
         
             <li><a class="toctree-l4" href="#0302_numerical_summary">03.02. Numerical Summary</a></li>
         
-            <li><a class="toctree-l4" href="#030201_location">03.02.01. Location</a></li>
+            <li><a class="toctree-l4" href="#0303_graphical_summary">03.03. Graphical summary</a></li>
         
-            <li><a class="toctree-l4" href="#030202_variance">03.02.02. Variance</a></li>
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#04_mean_median">04. Mean / Median</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#0401_two_sample_test">04.01. Two sample test</a></li>
         
         </ul>
     
@@ -243,7 +250,7 @@ Filename:   note.md
 Project:    /Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 Author:     shumez <https://github.com/shumez>
 Created:    2019-06-26 14:31:9
-Modified:   2019-06-26 16:59:27
+Modified:   2019-07-03 16:28:6
 -----
 Copyright (c) 2019 shumez
 -->
@@ -262,6 +269,12 @@ Copyright (c) 2019 shumez
 <li><a href="#0302_numerical_summary">03.02. Numerical Summary</a><ul>
 <li><a href="#030201_location">03.02.01. Location</a></li>
 <li><a href="#030202_variance">03.02.02. Variance</a></li>
+</ul>
+</li>
+<li><a href="#0303_graphical_summary">03.03. Graphical summary</a><ul>
+<li><a href="#030301_histogram">03.03.01. Histogram</a></li>
+<li><a href="#030302_box-plot">03.03.02. Box-plot</a></li>
+<li><a href="#030303_histogram_boxplot">03.03.03. Histogram &amp; Boxplot</a></li>
 </ul>
 </li>
 </ul>
@@ -307,7 +320,7 @@ Copyright (c) 2019 shumez
 <li><strong>shape</strong></li>
 </ul>
 <h3 id="0302_numerical_summary">03.02. Numerical Summary<a class="headerlink" href="#0302_numerical_summary" title="Permanent link">&para;</a></h3>
-<h3 id="030201_location">03.02.01. Location<a class="headerlink" href="#030201_location" title="Permanent link">&para;</a></h3>
+<h4 id="030201_location">03.02.01. Location<a class="headerlink" href="#030201_location" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Mean </li>
 </ul>
@@ -340,7 +353,7 @@ Copyright (c) 2019 shumez
 </li>
 </ul>
 <p>k% trimmed mean: 上下k%を取り除いたあとの平均</p>
-<h3 id="030202_variance">03.02.02. Variance<a class="headerlink" href="#030202_variance" title="Permanent link">&para;</a></h3>
+<h4 id="030202_variance">03.02.02. Variance<a class="headerlink" href="#030202_variance" title="Permanent link">&para;</a></h4>
 <p>Variability (変動), Dispersion (散らばり)</p>
 <ul>
 <li>Variance, Standard deviation</li>
@@ -378,6 +391,55 @@ Copyright (c) 2019 shumez
 <li>
 <script type="math/tex">\text{Mean} \pm \text{SE}</script>の範囲に, 標本平均の60-70%が分布している</li>
 <li>SEは標本平均による母集団平均お推定の正確さを意味する</li>
+</ul>
+</li>
+</ul>
+<h3 id="0303_graphical_summary">03.03. Graphical summary<a class="headerlink" href="#0303_graphical_summary" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Histogram</li>
+<li>Box plot</li>
+</ul>
+<h4 id="030301_histogram">03.03.01. Histogram<a class="headerlink" href="#030301_histogram" title="Permanent link">&para;</a></h4>
+<p>Class/Bin (階級), 階級値
+Frequency (度数)</p>
+<p>Sturges formula:
+<script type="math/tex; mode=display"> k \approx 1 + \log_2{n} </script>
+</p>
+<h5 id="03030101_shape">03.03.01.01. Shape<a class="headerlink" href="#03030101_shape" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Unimodal</li>
+<li>Bimodal</li>
+<li>
+<p>Multimodal</p>
+</li>
+<li>
+<p>Symmetric</p>
+</li>
+<li>Positively/Right skewed</li>
+<li>Negatively/Left skewed</li>
+</ul>
+<h4 id="030302_box-plot">03.03.02. Box-plot<a class="headerlink" href="#030302_box-plot" title="Permanent link">&para;</a></h4>
+<p>Outlier (はずれ値)</p>
+<h4 id="030303_histogram_boxplot">03.03.03. Histogram &amp; Boxplot<a class="headerlink" href="#030303_histogram_boxplot" title="Permanent link">&para;</a></h4>
+<h2 id="04_mean_median">04. Mean / Median<a class="headerlink" href="#04_mean_median" title="Permanent link">&para;</a></h2>
+<p>群間での平均値, 中央値の差</p>
+<h3 id="0401_two_sample_test">04.01. Two sample test<a class="headerlink" href="#0401_two_sample_test" title="Permanent link">&para;</a></h3>
+<p>
+<script type="math/tex">H_0</script>: <script type="math/tex">\mu_1 = \mu_2</script> 母集団平均が一定<br />
+<script type="math/tex">H_1</script>: <script type="math/tex">\mu_1 \neq \mu_2</script> 母集団平均が異なる</p>
+<ul>
+<li>Welch's t-test: <ul>
+<li>正規分布に従う</li>
+<li>2群の分散は等しくなくてもいい</li>
+<li>
+<script type="math/tex">\text{Mean} \pm \text{SD}</script> に対応</li>
+</ul>
+</li>
+<li>Mann-Whitney test, Wilcoxon's rank sum test: <ul>
+<li>同じ形の分布に従う</li>
+<li>等分散</li>
+<li>
+<script type="math/tex">\text{Median(IQR)}</script> に対応</li>
 </ul>
 </li>
 </ul>
