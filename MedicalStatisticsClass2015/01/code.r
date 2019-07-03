@@ -1,104 +1,42 @@
 # Filename: 	code.r
 # Project: 	/Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 # Author: 	shumez <https://github.com/shumez>
-# Created: 	2019-06-26 16:42:0
-# Modified: 	2019-06-26 16:49:28
+# Created: 	2019-06-26 20:15:5
+# Modified: 	2019-07-03 16:24:11
 # -----
 # Copyright (c) 2019 shumez
 
-##### 医学統計勉強会15第一回基本統計量　R code #####
-
 x <- c(0.684, 1.406, -0.663, -0.124, 0.849, -0.888, -0.492, -0.044, -0.188, 0.536, 2.063, -1.379, 0.920, 0.453, 1.239)
+df <- data.frame(x=x, class=rep('x', length(x)))
+diamonds
 
-## 数量的なデータの要約 ##
+View(df)
 
-sum(x)			# x の要素の和
-length(x)		# x の長さ
-mean(x)			# x の平均
-median(x)		# x の中央値
-quantile(x)		# x の四分位点．Five numbers summary
-quantile(x, 0.2)	# x の20%パーセント点
-summary(x)			# Five numbers summary + 平均
+library('ggplot2')
+length(df$carat)
+round(1 + log2(length(diamonds$carat)))
 
-var(x)			# x の分散
-sd(x)			# x の標準偏差
-sqrt(x)			# x の平方根
-sqrt(var(x))	# x の分散の平方根 = x の標準偏差
-IQR(x)			# x の四分位点間距離
-quantile(x, 0.75) - quantile(x, 0.25)	# 四分位点間距離の定義の確認
+p <- ggplot(df, aes(x)) + geom_histogram(binwidth=.5)
+p <- ggplot(diamonds, aes(carat, fill=cut)) + geom_histogram(bins=round(1 + log2(length(diamonds$carat))))
+p <- ggplot(df, aes(class, x)) + 
+  geom_boxplot() + 
+  geom_jitter(width=0)# +
+p <- p + annotate('text', aes(label='25% quantile'), x=1, y=quantile(df$x, .25))
+  # geom_text(aes(x=1, y=quantile(df$x, .25), label='25% quantile'))
 
-## 視覚的なデータの要約 ##
+p <- ggplot(df, aes(class, x)) + geom_violin(draw_quantiles = c(0.25, 0.5, 0.75)) + geom_jitter(width=0)
 
-x <- rnorm(100)	# ランダムなサンプルの生成
-
-hist(x)			# ヒストグラム（頻度）
-hist(x, freq=F)	# ヒストグラム（相対頻度）
-
-boxplot(x)		# ボックスプロット
-
-# ヒストグラムとボックスプロット #
-
-# 二峰型 #
-x1 <- rnorm(100, mean=0)
-x2 <- rnorm(100, mean=4)
-x <- c(x1, x2)
-hist(x)
-boxplot(x)
-
-# 裾の重い分布 #
-y1 <- rnorm(100, sd=1)
-y2 <- rnorm(100, sd=4)
-y <- c(y1, y2)
-hist(y)
-boxplot(y)
+p <- ggplot(df, aes(class, x)) + geom_point()
+p
 
 
-
-## 二標本問題 ##
+# Two sample test
 x1 <- c(8, 17, 9, 5, 14, 13, 13, 3, 9, 0)
 x2 <- c(19, 13, 13, 18, 21, 18, 11, 21, 20, 11)
 
 boxplot(x1, x2)
 
-t.test(x1, x2)		# Welch's t test
-wilcox.test(x1, x2)	# Mann-Whitney test, Wilcoxon’s rank sum test
-
-
-
-## 分散分析 ##
-
-# サンプルデータ #
-Data <- data.frame(
-  z = c(8, 16, 7, 18, 6, 11, 15, 11, 20, 7, 19, 20, 21, 19, 24), 
-  group = factor(c(rep(1,5), rep(2,5), rep(3,5)), label=c("placebo", "drugA", "drugB")))
-print(Data)
-boxplot(z ~ group, data=Data)
-
-# ANOVA #
-fit.aov <- aov(z ~ group, data=Data)
-summary(fit.aov)
-
-# Kruskal-Wallis rank sum test #
-kruskal.test(z ~ group, data=Data)
-
-
-
-## 多重比較 ##
-
-# Tukey's method #
-library(MASS)
-fit.mc <- TukeyHSD(fit.aov)
-print(fit.mc)
-plot(fit.mc)
-
-# Dunnett's method (Dunnett post hoc test) #
-install.packages("multcomp")	# 最初の一回のみ実行
-library(multcomp)
-fit.dunnett <- glht(fit.aov, linfct = mcp(group = "Dunnett"))
-confint(fit.dunnett, level=0.95)
-summary(fit.dunnett)
-
-# William's method #
-fit.williams <- glht(fit.aov, linfct = mcp(group = "Williams"))
-confint(fit.williams, level=0.95)
-summary(fit.williams)
+# Welch's t test
+t.test(x1, x2)
+# Mann-Whitney test, Wilcoxon’s rank sum test
+wilcox.test(x1, x2)
