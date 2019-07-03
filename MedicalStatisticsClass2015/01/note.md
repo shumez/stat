@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-06-26 14:31:9
-Modified: 	2019-06-26 16:59:27
+Modified: 	2019-07-03 15:56:56
 -----
 Copyright (c) 2019 shumez
 -->
@@ -124,6 +124,39 @@ standard error (標準誤差):　Standard error of mean (標本平均の標準�
     - \(\text{Mean} \pm \text{SE}\)の範囲に, 標本平均の60-70%が分布している
     - SEは標本平均による母集団平均お推定の正確さを意味する
 
+
+## 03.03. Graphical summary 
+
+- Histogram
+- Box plot
+
+
+### 03.03.01. Histogram
+
+Class/Bin (階級), 階級値
+Frequency (度数)
+
+Sturges formula:
+\[ k \approx 1 + \log_2{n} \]
+
+
+#### 03.03.01.01. Shape
+
+- Unimodal
+- Bimodal
+- Multimodal
+
+- Symmetric
+- Positively/Right skewed
+- Negatively/Left skewed
+
+
+### 03.03.02. Box-plot
+
+Outlier (はずれ値)
+
+
+### 03.03.03. Histogram & Boxplot
 
 
 
