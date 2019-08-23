@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-06-26 14:31:9
-Modified: 	2019-08-23 16:58:27
+Modified: 	2019-08-23 17:29:34
 -----
 Copyright (c) 2019 shumez
 -->
@@ -198,6 +198,30 @@ Outlier (はずれ値)
 - **Box-Cox変換**
 
 か必要
+
+
+### 04.03. Multiple Comparison
+
+どの母集団平均が異なっているか
+
+- **Turkey's HSD** (**Honestly Significant Difference**)  
+    \((\mu_i - \mu_j)\), \(i \ne j\)  
+    \(\frac{k(k-1)}{2}\)
+- **Dunnett**  
+    ctrl と他を比較  
+    \(H_1\): \(\mu_1 \ne \mu_2, \mu_1 \ne \mu_3, \cdots, \mu_1 \ne \mu_k \)  
+    \((k-1)\)通り
+- **Williams**  
+    単調性 
+    \(H_1\): \(\mu_1 \le \mu_2 \le \cdots \le \mu_k\) or \(H_1\): \(\mu_1 \ge \mu_2 \ge \cdots \ge \mu_k\)
+
+
+non-parametric: 正規分布に従う仮定を必要としない
+
+|               |               |           |                   |
+|---------------|---------------|-----------|-------------------|
+| parametric    | Turkey        | Dunnet    | Williams          |
+| non-parametric| Steel-Swass   | Steel     | Shirley-Williams  |
 
 
 ##
