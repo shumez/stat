@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/stat/MedicalStatisticsClass2015/01
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-06-26 14:31:9
-Modified: 	2019-07-03 16:14:55
+Modified: 	2019-08-23 16:58:27
 -----
 Copyright (c) 2019 shumez
 -->
@@ -182,6 +182,23 @@ Outlier (はずれ値)
     - \(\text{Median(IQR)}\) に対応
 
 
+### 04.02. Three sample 
+
+\(H_0\): \(\mu_1 = \cdots = \mu_k\) 母集団平均が一定   
+\(H_1\): 少なくとも1つの母集団平均が他からことなる
+
+- **ANOVA** (Analysis of variance) 分散分析
+- **Kruskal-Wallis** test
+
+**等分散の仮定**
+
+**分散を安定化する**必要がある
+
+- **対数変換**
+- **Box-Cox変換**
+
+か必要
+
 
 ##
 <!-- toc -->
@@ -203,7 +220,6 @@ Outlier (はずれ値)
 [030303]: #030303_histogram_boxplot
 
 [04]: #04_mean_median
-[]
 
 <!-- ref -->
 
